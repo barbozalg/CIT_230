@@ -1,85 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 <head>
+<style>
+
+a:link { color: blue;}
+a:visited { color: blue; }
+a:hover { color: white; background-color:blue; }
+a:active { color: red; background-color:gray; }
+
+nav ul { padding: 0; }
+
+#frame { padding: 10px; background-color: navy; }
+
+#me { float: right; }
+
+#copy { width: 100%; text-align: center; clear: both; }
+
+</style>
 <meta charset="utf-8">
-<title>Arrays</title>
-<script>
-
-/* ------------ Defining Table
-
-* Input: array list.
-
-* Process: go through the array and count only the even numbers.
-
-* Output: Return even total.
-
-*/
-
-function countEvens(list){
-	var even = 0;
-	for(var i = 0; i < list.length; i++){
-		if((list[i] % 2) == 0){
-			even++;
-		}
-	}
-	return even;
-}
-
-
-/* ------------ Defining Table
-
-* Input: array list.
-
-* Process: go through the array multiply each position with the multi number.
-
-* Output: Return new list.
-
-*/
-
-function multiply(list, multiplier){
-	for(var i = 0; i < list.length; i++){
-		list[i]*= multiplier;
-	}
-	return list;
-}
-
-function testArray(){
-	var Ar = document.getElementById('lista').value;
-	var v1 = "";
-	var v2;
-	var mul = document.getElementById('multi').value;
-	if( (Ar=="") || (Ar.search(/;/)==-1) ){
-		val = "Error";
-	} else {
-		Ar = Ar.split(";");
-		v1 = countEvens(Ar);
-		v2 = multiply(Ar,mul);
-	}
-	document.getElementById('output').innerHTML = "<br><b><i>Result countEvens</i></b><br>Even Numbers Total: " + v1 + "<br><br><b><i>Result multiply</i></b><br> Array multiplied by " + mul + " on each position: [" + v2.join(", ") + "]";
-}
-
-</script>
+<title>LUIS BARBOZA</title>
 </head>
 <body>
-	<table><tr>
-		<td><h1>Arrays</h1></td>
-	</tr><tr>
-		<td>Write a list of numbers separated by semicolons (;),<br>
-		by pressing the addEnds button you will add the first<br>
-		and the last value. This value will be returned as<br>
-		the result (At least 2 values must exist).<br><br></td>
-	</tr><tr>
-		<td>Array <b><i>list</i></b></td>
-	</tr><tr>
-		<td><textarea id="lista" cols="45" rows="8">17;8;9;5;20</textarea></td>
-	</tr><tr>
-		<td>Multiplier</td>
-	</tr><tr>
-		<td><input type="text" id="multi" value="3"></td>
-	</tr><tr>
-		<td style="text-align:right;"><button type="button" onclick="testArray();">Test</button></td>
-	</tr><tr>
-		<td><div id="output"></div></td>
-	</tr></table>
+<h1>Bro Luis Gabriel Barboza</h1>
+
+<h2>Assignment Portal</h2>
+
+<div id="frame"><a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+
+<hr>
+
+<h1>Home</h1>
+
+<img id="me" src="p25.jpg" width="200" height="200" alt="My Pic">
+
+<ul>
+	<li>Lesson One.</li>
+	<li>Lesson Two.</li>
+	<li>Lesson Three.</li>
+</ul>
+<div id="copy">&copy; Luis Barboza 2019</div>
 </body>
 </html>
