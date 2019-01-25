@@ -11,18 +11,21 @@
 
 .style1 { margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em; }
 
-.markee { -webkit-animation: mymove 5s infinite; animation: mymove 5s infinite; }
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from { left: 0px; }
-    to { left: 200px; }
-}
-
-@keyframes mymove {
-    from { left: 0px; }
-    to { left: 200px; }
-}
+.markee { 
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x:-webkit-marquee;
+    -webkit-marquee-direction: forwards;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: normal;
+    -webkit-marquee-increment: small;
+    -webkit-marquee-repetition: 5;
+    overflow-x: marquee-line;
+    marquee-direction: forward;
+    marquee-style: scroll;
+    marquee-speed: normal;
+    marquee-play-count: 5;
+ }
 
 </style>
 <link href="styles/main.css" rel="stylesheet" />
