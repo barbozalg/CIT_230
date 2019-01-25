@@ -11,21 +11,29 @@
 
 .style1 { margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em; }
 
+.cont {
+    position: relative;
+    padding: 2px;
+    overflow: hidden;
+    width: 700px;
+}
 .markee {
-   -webkit-animation-name: mmov;
-   -webkit-animation-duration: 3s;
-   -webkit-animation-iteration-count: infinite;
-   -webkit-animation-direction: normal;
-   position: relative;
+    animation-name: mmov;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    position: relative;
+    padding: 2px;
+    white-space: nowrap;
 }
 
 @-webkit-keyframes mmov {
     from { left: 0px; }
-    to { left: 100px; }
+    to { left: 700px; }
 }
 
 </style>
-<link href="styles/main.css" rel="stylesheet" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -72,7 +80,7 @@
             <li><a href="http://www.lewiston.com/business-directory-2-2/">LEWISTON IDAHO</a></li>
             <li><a href="http://www.moscow.com/business-directory-2/">Moscow ID</a></li>
         </ol>
-        <div class="markee">Subscribe to our Newsletter to get daily specials emailed to you directly!!</div>
+        <div class="cont"><div class="markee">Subscribe to our Newsletter to get daily specials emailed to you directly!!</div></div>
     </div>
 </main>
 
