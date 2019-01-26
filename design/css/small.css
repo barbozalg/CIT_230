@@ -1,0 +1,79 @@
+
+/*----------- GENERAL --------------*/
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #fff;
+    min-width: 270px;
+}
+header figure { width:40px; float: left; margin: 0; }
+header figure img { width:100%; }
+header h1 { margin: 0; color:#255156; font-size:20px; }
+header h2 { margin: 0; color:#7793a1; font-size:16px; font-weight: normal; }
+
+
+/*----------- NAVIGATION --------------*/
+nav { background-color: #255156; clear: both; min-width: 270px; }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: #eee; 
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: #7793a1;
+    color: #fff;
+}
+nav ul li.active a {
+    background-color: #f79e1c;
+    color: #eee;
+}
+
+
+/*----------- MAIN --------------*/
+main { min-height: 10rem; padding: 1rem 2%; min-width: 270px; }
+main h1 { color: #f79e1c; }
+main h2 { color: #7793a1; }
+main figure { width: 100%; margin: .2%; }
+main figure img { width: 100%; }
+main figcaption { text-align: center; font-size: .7rem; }
+main a { color: #255156; }
+main a:hover { color: #f79e1c; }
+
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: 12px;
+    color: #eee;
+    min-width: 270px;
+    margin-top: 10%;
+    background-color: #255156;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
