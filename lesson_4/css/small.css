@@ -48,10 +48,11 @@ nav ul li a:hover {
 nav ul li.active { background-color: #ffca18; }
 nav ul li.active a { color: #111; cursor: default; font-weight: bold; }
 nav ul li.active a:hover { background-color: #ffca18; color: #111; }
-
+.home { padding-left: 0; padding-right: 0; text-align: center; }
 
 /*----------- MAIN --------------*/
 main { min-height: 10rem; padding: 1rem 2%; min-width: 260px; margin-top: 5px; }
+.titulo { font-family: 'Lobster', cursive; }
 main div { position: relative; min-width: 260px; margin-bottom: 2% }
 main div figure { width: 100%; margin: 0; margin: .2%; }
 main div figure img { width: 100%; }

@@ -14,12 +14,10 @@ header, nav, main, footer {
 header figure { width:85px; }
 header h1 { font-size:48px; margin-top: 2px; }
 header h2 { font-size:24px; }
-#home { width:85px; color: #ffca18; }
+.home { width:85px; }
 
 
 /*----------- NAVIGATION --------------*/
-#home { background: #ffca18; width:85px; }
-#home a { visibility: visible; }
 
 
 /*----------- MAIN --------------*/

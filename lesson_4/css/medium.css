@@ -10,15 +10,10 @@ header h1 { font-size:24px; }
 header h2 { font-size:16px; }
 
 /*----------- NAVIGATION --------------*/
-nav ul {margin-left: 2%;}
-nav ul li {float: left;}
+nav ul { margin-left: 2%; }
+nav ul li { float: left; }
 nav ul li a { padding: .5rem 1rem; }
-#home {
-    background: #ffca18 url("../images/home.png") no-repeat center;
-    width:60px;
-}
-#home a { visibility: hidden; }
-
+.home { width: 60px; }
 
 /*----------- MAIN --------------*/
 main figure { width: 50%; float: right; margin-left: 2%; margin-bottom: 2%; }
