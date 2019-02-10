@@ -1,0 +1,32 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+header, nav, main, .info, footer {
+	max-width: 64rem;
+	margin:auto;
+}
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header figure { width:85px; }
+header h1 { font-size:48px; margin-top: 2px; }
+header h2 { font-size:24px; }
+.home { width:85px; }
+
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main figure { width: 33%; }
+.current { min-height: 400px; }
+.forecast { width: 55%; }
+
+
+/*----------- FOOTER --------------*/
+
+    
+} /* end of media query */
