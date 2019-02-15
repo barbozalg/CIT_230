@@ -1,0 +1,32 @@
+/*   Medium Size   */
+@media only screen and (min-width: 1028px) {
+
+
+header, nav, main, .info, footer { max-width: 1024px; margin:auto; }
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header figure { width:85px; }
+header h1 { font-size:48px; margin-top: 2px; }
+header h2 { font-size:24px; }
+.home { width:85px; }
+
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main figure { width: 33%; }
+.current { min-height: 400px; }
+.forecast { width: 75%; }
+
+.info { padding: 1.5%; }
+
+
+/*----------- FOOTER --------------*/
+
+
+} /* end of media query */

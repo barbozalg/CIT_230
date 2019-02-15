@@ -1,0 +1,102 @@
+/*   Small Size   */
+
+
+/*----------- GENERAL --------------*/
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body { font-size: 16px; font-family: Verdana, sans-serif; }
+
+
+/*----------- HEADER --------------*/
+header { padding: .5rem 2%; background-color: #fff; min-width: 260px; vertical-align: middle; }
+header figure { width:40px; float: left; margin: 4px 10px 7px 0px; }
+header figure img { width:100%; }
+header h1 { margin: 0; margin-top: 11px; color:#00a8f3; font-size:14px; }
+header h2 { margin: 0; font-size: 8px; font-weight: normal; }
+header h1 b { color:#ffca18; }
+header h1 i { color:#f79e1c; }
+
+
+/*----------- NAVIGATION --------------*/
+nav { background-color: #f79e1c; clear: both; min-width: 260px; }
+nav button {
+    display: inline;
+    width: 100%;
+    height: 32px;
+    background-color: #f79e1c;
+    color: #eee;
+    border: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+.cerrar { text-align: right; display: none; color: #eee; background-color: #1f4371; }
+nav ul { list-style-type: none; padding: 0; margin: 0; display: none; }
+nav ul li a {
+    display: block;
+    color: #eee; 
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li a:hover, nav button:hover { background-color: #00a8f3; color: #fff; }
+nav ul li.active, nav button:active { background-color: #ffca18; }
+nav ul li.active a { color: #111; cursor: default; font-weight: bold; }
+nav ul li.active a:hover { background-color: #ffca18; color: #111; }
+.home { padding-left: 0; padding-right: 0; text-align: center; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+
+/*----------- MAIN --------------*/
+main { min-height: 10rem; padding: 0.5rem 2%; min-width: 260px; }
+.titulo { font-family: 'Lobster', cursive; }
+.current { position: relative; width: 100%; min-width: 280px; height: auto; }
+.current picture { width: 100%; height: auto; }
+.current picture img { width: 100%; height: auto; }
+.current div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(9, 9, 9, 0.7);
+    margin: 10px 0px 0px 10px;
+    padding: 0px 0px 10px 10px;
+    color: #eee;
+    font-size: 14px;
+}
+.current div h2 { font-size: 18px; }
+.forecast{ display: none; }
+main div { position: relative; min-width: 260px; margin-bottom: 2% }
+main div figure { width: 100%; margin: 0; margin: .2%; }
+main div figure img { width: 100%; }
+main div figure figcaption { text-align: center; font-size: 10px; }
+main div h2 { color: #00a8f3; }
+main div a { color: #f79e1c; font-weight: bold; }
+main div table {
+    min-width: 260px;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+}
+main div table td { text-align: center; margin: 0; border: 0; padding-bottom: 10px;  }
+main div p { text-align: justify; }
+.tdToday{ width: 36%; background-color: #1f4371; }
+.tdTonight{ width: 32%; background-color: #2962a9; }
+.tdTomorrow{ width: 32%; background-color: #347bd5; }
+
+.info{ font-size: 12px; background-color: #ffca18; padding: 5% 3%; clear: both; height: auto; }
+.info h4 { margin: 0 0 5px 0; padding: 0; font-size: 14px; }
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: 12px;
+    color: #000;
+    min-width: 260px;
+    background-color: #f79e1c;
+    padding: .5rem 2%;
+    text-align: center;
+}
