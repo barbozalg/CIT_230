@@ -52,6 +52,7 @@ nav ul li.active a:hover { background-color: #ffca18; color: #111; }
 
 /*----------- MAIN --------------*/
 main { min-height: 10rem; padding: 0.5rem 2%; min-width: 260px; }
+.init { padding-top: 1rem; }
 .titulo { font-family: 'Lobster', cursive; }
 .current { position: relative; width: 100%; min-width: 280px; height: auto; }
 .current picture { width: 100%; height: auto; }
