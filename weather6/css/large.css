@@ -9,6 +9,7 @@ header, nav, main, .info, footer { max-width: 1024px; margin:auto; }
 
 
 /*----------- HEADER --------------*/
+header { padding-left: 20px; }
 header figure { width:85px; }
 header h1 { font-size:48px; margin-top: 2px; }
 header h2 { font-size:24px; }
@@ -16,7 +17,7 @@ header h2 { font-size:24px; }
 
 
 /*----------- NAVIGATION --------------*/
-
+nav ul { margin-left: 20px; }
 
 /*----------- MAIN --------------*/
 main figure { width: 33%; }

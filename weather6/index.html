@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="description" content="Fill Me In">
+<meta name="description" content="tWEATHERsp.com will be to keep up to date our customer with the most trustable and recent information. We will have our main cities (Preston, Soda Springs, Fish Haven and the possibility to customize with your favorite cities) with all the necessary information for our users, of course we will have updated information of the rest of the country and the world; also we will have Storm Center to make daily traces to the storm and the consequences in its wake, and finally the Gallery with photos, videos and reports with a history of the most outstanding events worldwide.">
 <meta name="author" content="Luis Barboza">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="msapplication-TileColor" content="#da532c">
@@ -32,7 +32,9 @@
 </header>
 
 <nav class="clearfix">
-    <ul>
+    <button id="oMenu" onclick="toggleMenu(false);"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <button id="cMenu" class="cerrar" onclick="toggleMenu(true);">Close&nbsp;&nbsp;<b>X</b></button>
+    <ul id="iMenu">
         <li class="active"><a href="index.html" class="home">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
         <li><a href="soda_springs.html">Soda Springs</a></li>
@@ -43,88 +45,90 @@
 </nav>
     
 <main>
-        <div>
-            <figure>
-                <img src="images/map.jpg" alt="USA Map">
-                <figcaption>USA NATIONAL FORECAST</figcaption>
-            </figure>
-            <h2>February: More Daylight, Temps Rise, But It's Not All Good</h2>
-            <p>Although temperatures rise, February is the snowiest month in some areas.</p>
-            <a href="gallery.html">see more</a>
-        </div>
-        <div>
-            <table>
-            <tr>
-                <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
-                <td class="tdTonight"><h3>TONIGHT</h3></td>
-                <td class="tdTomorrow"><h3>TOMORROW</h3></td>
-            </tr>
-            <tr>
-                <td class="tdToday"><img src="images/today.png" alt="Today"></td>
-                <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
-                <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
-            </tr>
-            <tr>
-                <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
-                <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
-                <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
-            </tr>
-            </table>
-            <h2>Preston 02/01/2019</h2>
-            <a href="preston.html">see more</a>
-        </div>
-        <div>
-            <table>
-            <tr>
-                <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
-                <td class="tdTonight"><h3>TONIGHT</h3></td>
-                <td class="tdTomorrow"><h3>TOMORROW</h3></td>
-            </tr>
-            <tr>
-                <td class="tdToday"><img src="images/today.png" alt="Today"></td>
-                <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
-                <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
-            </tr>
-            <tr>
-                <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
-                <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
-                <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
-            </tr>
-            </table>
-            <h2>Soda Springs 02/01/2019</h2>
-            <a href="soda_springs.html">see more</a>
-        </div>
-        <div>
-            <table>
-            <tr>
-                <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
-                <td class="tdTonight"><h3>TONIGHT</h3></td>
-                <td class="tdTomorrow"><h3>TOMORROW</h3></td>
-            </tr>
-            <tr>
-                <td class="tdToday"><img src="images/today.png" alt="Today"></td>
-                <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
-                <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
-            </tr>
-            <tr>
-                <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
-                <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
-                <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
-            </tr>
-            </table>
-            <h2>Fish Haven 02/01/2019</h2>
-            <a href="fish_haven.html">see more</a>
-        </div>
-    </main>
+    <div>
+        <figure>
+            <img src="images/map.jpg" alt="USA Map">
+            <figcaption>USA NATIONAL FORECAST</figcaption>
+        </figure>
+        <h2>February: More Daylight, Temps Rise, But It's Not All Good</h2>
+        <p>Although temperatures rise, February is the snowiest month in some areas.</p>
+        <a href="gallery.html">see more</a>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
+            <td class="tdTonight"><h3>TONIGHT</h3></td>
+            <td class="tdTomorrow"><h3>TOMORROW</h3></td>
+        </tr>
+        <tr>
+            <td class="tdToday"><img src="images/today.png" alt="Today"></td>
+            <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
+            <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
+        </tr>
+        <tr>
+            <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
+            <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
+            <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
+        </tr>
+        </table>
+        <h2>Preston 02/01/2019</h2>
+        <a href="preston.html">see more</a>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
+            <td class="tdTonight"><h3>TONIGHT</h3></td>
+            <td class="tdTomorrow"><h3>TOMORROW</h3></td>
+        </tr>
+        <tr>
+            <td class="tdToday"><img src="images/today.png" alt="Today"></td>
+            <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
+            <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
+        </tr>
+        <tr>
+            <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
+            <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
+            <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
+        </tr>
+        </table>
+        <h2>Soda Springs 02/01/2019</h2>
+        <a href="soda_springs.html">see more</a>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
+            <td class="tdTonight"><h3>TONIGHT</h3></td>
+            <td class="tdTomorrow"><h3>TOMORROW</h3></td>
+        </tr>
+        <tr>
+            <td class="tdToday"><img src="images/today.png" alt="Today"></td>
+            <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
+            <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
+        </tr>
+        <tr>
+            <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
+            <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
+            <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
+        </tr>
+        </table>
+        <h2>Fish Haven 02/01/2019</h2>
+        <a href="fish_haven.html">see more</a>
+    </div>
+</main>
 
 <div class="info">
-    <div><b>Address:</b><br><b>the WEATHER site project</b><br>7620 Little River Turnpike<br>Arlington, VA 22449<br>&nbsp;</div>
-    <div><b>Phone:</b><br>(571)232-1685<br><br><b>Email:</b><br>barbozalg@outlook.com<br>&nbsp;</div>
+    <div><h4>Address:</h4><b><i>the WEATHER site project</i></b><br>7620 Little River Turnpike<br>Arlington, VA 22449<br>&nbsp;</div>
+    <div><h4>Phone:</h4>(571)232-1685<br><br><h4>Email:</h4>barbozalg@outlook.com</div>
 </div>
 
 <footer>
-    &copy; 2019 &bull; Luis Barboza
+    &copy;Luis Barboza &bull; <span id="currentDate"></span>
 </footer>
+
+<script src="scripts/currentdate.js"></script>
 
 </body>
 </html>
