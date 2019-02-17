@@ -1,15 +1,5 @@
-function getObj(nm){ return document.getElementById(nm); }
-
 function toggleMenu(hide){
-    if(hide){
-        getObj("oMenu").style.display = "inline";
-        getObj("cMenu").style.display = "none";
-        getObj("iMenu").style.display = "none";
-    } else {
-        getObj("oMenu").style.display = "none";
-        getObj("cMenu").style.display = "inline";
-        getObj("iMenu").style.display = "inline";
-    }
+    document.getElementById("iMenu").classList.toggle("hide");
 }
 
 function weekDayName(num){
@@ -42,4 +32,4 @@ function monthName(num){
 }
 
 var d = new Date();
-getObj("currentDate").innerHTML = weekDayName(d.getDay()) + ", " + d.getDate() + " " + monthName(d.getMonth()) + " " + d.getFullYear();
+document.getElementById("currentDate").innerHTML = weekDayName(d.getDay()) + ", " + d.getDate() + " " + monthName(d.getMonth()) + " " + d.getFullYear();

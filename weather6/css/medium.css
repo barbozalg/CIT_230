@@ -14,9 +14,11 @@ header h2 { font-size:16px; }
 /*----------- NAVIGATION --------------*/
 nav button { display: none; }
 nav ul { display: block; margin-left: 2%; }
+nav ul.hide { display: block; }
 nav ul li { float: left; }
 nav ul li a { padding: .5rem 1rem; }
 .home { width: 60px; }
+.clearfix:after { display: table; }
 
 
 /*----------- MAIN --------------*/

@@ -23,7 +23,7 @@
 <link href="css/large.css" rel="stylesheet" type="text/css">
 
 </head>
-<body>
+<body">
 
 <header>
     <figure><img src="images/logo.png" alt="logo"></figure>
@@ -32,9 +32,8 @@
 </header>
 
 <nav class="clearfix">
-    <button id="oMenu" onclick="toggleMenu(false);"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
-    <button id="cMenu" class="cerrar" onclick="toggleMenu(true);">Close&nbsp;&nbsp;<b>X</b></button>
-    <ul id="iMenu">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
         <li><a href="index.html" class="home">Home</a></li>
         <li class="active"><a href="preston.html">Preston</a></li>
         <li><a href="soda_springs.html">Soda Springs</a></li>
@@ -47,11 +46,12 @@
 <main>
     <h1 class="titulo">Preston</h1>
     <div class="current">
-        <picture>
-            <source srcset="images/weather_small.jpg" media="(max-width: 560px)">
-            <source srcset="images/weather_medium.jpg" media="(max-width: 1028px)">
-            <img src="images/weather.jpg" alt="Weather">
-        </picture>
+        <figure>
+            <img src="images/weather.jpg" alt="Weather" sizes="100vw"
+            srcset="images/weather_small.jpg 560w,
+                    images/weather_medium.jpg 1024w,
+                    images/weather_large.jpg 1300w">
+        </figure>
         <div>
             <h2 class="titulo">Current Conditions</h2>
             Partly Cloudy<br>

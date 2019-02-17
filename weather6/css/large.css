@@ -17,7 +17,11 @@ header h2 { font-size:24px; }
 
 
 /*----------- NAVIGATION --------------*/
-nav ul { margin-left: 20px; }
+nav button { display: none; }
+nav ul { display: block; margin-left: 20px; }
+nav ul.hide { display: block; }
+.clearfix:after { display: table; }
+
 
 /*----------- MAIN --------------*/
 main figure { width: 33%; }

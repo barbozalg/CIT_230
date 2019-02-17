@@ -32,8 +32,9 @@ nav button {
     text-align: left;
     cursor: pointer;
 }
-.cerrar { text-align: right; display: none; color: #eee; background-color: #1f4371; }
-nav ul { list-style-type: none; padding: 0; margin: 0; display: none; }
+.cerrar { display: none; color: #eee; background-color: #1f4371; }
+nav ul { list-style-type: none; padding: 0; margin: 0; display: block; }
+nav ul.hide { display: none; }
 nav ul li a {
     display: block;
     color: #eee; 
@@ -55,8 +56,8 @@ main { min-height: 10rem; padding: 0.5rem 2%; min-width: 260px; }
 .init { padding-top: 1rem; }
 .titulo { font-family: 'Lobster', cursive; }
 .current { position: relative; width: 100%; min-width: 280px; height: auto; }
-.current picture { width: 100%; height: auto; }
-.current picture img { width: 100%; height: auto; }
+.current figure { width: 100%; height: auto; }
+.current figure img { width: 100%; height: auto; }
 .current div {
     position: absolute;
     top: 0px;
