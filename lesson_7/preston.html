@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="tWEATHERsp.com will be to keep up to date our customer with the most trustable and recent information. We will have our main cities (Preston, Soda Springs, Fish Haven and the possibility to customize with your favorite cities) with all the necessary information for our users, of course we will have updated information of the rest of the country and the world; also we will have Storm Center to make daily traces to the storm and the consequences in its wake, and finally the Gallery with photos, videos and reports with a history of the most outstanding events worldwide.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<title>The Weather Site Project - Preston</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="logo">
+    <div>
+        <h1>the<b>WEATHER</b>site<i>project</i></h1>
+        <h2>keeping <b>you</b> up to date</h2>
+    </div>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li><a href="index.html" class="home">Home</a></li>
+        <li class="active"><a href="preston.html">Preston</a></li>
+        <li><a href="soda_springs.html">Soda Springs</a></li>
+        <li><a href="fish_haven.html">Fish Haven</a></li>
+        <li><a href="storm_center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    
+<main>
+    <h1 class="titulo">Preston</h1>
+    <div class="current">
+        <figure>
+            <img src="images/weather.jpg" alt="Weather" sizes="100vw"
+            srcset="images/weather_small.jpg 560w,
+                    images/weather_medium.jpg 1024w,
+                    images/weather_large.jpg 1300w">
+        </figure>
+        <div>
+            <h2 class="titulo">Current Conditions</h2>
+            Partly Cloudy<br>
+            Low: 36&deg;<br>
+            High: 45&deg;
+        </div>
+    </div>
+
+    <div class="forecast">
+        <h2 class="titulo">Five Days Forecast</h2>
+        <table>
+            <tr class="dayt">
+                <td>Day</td>
+                <td>Description</td>
+                <td>Temp(F)&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;/&nbsp;H</td>
+                <td>Wind(mph)</td>
+                <td>Wind Chill</td>
+            </tr>
+            <tr class="day0">
+                <td id="wd0"></td>
+                <td id="dd0"></td>
+                <td class="titulo"><span id="ld0"></span>&deg; / <span id="hd0"></span>&deg;</td>
+                <td><span id="md0"></span> <span id="cd0"></span></td>
+                <td id="fd0"></td>
+            </tr>
+            <tr class="day1">
+                <td id="wd1"></td>
+                <td id="dd1"></td>
+                <td class="titulo"><span id="ld1"></span>&deg; / <span id="hd1"></span>&deg;</td>
+                <td><span id="md1"></span> <span id="cd1"></span></td>
+                <td id="fd1"></td>
+            </tr>
+            <tr class="day2">
+                <td id="wd2"></td>
+                <td id="dd2"></td>
+                <td class="titulo"><span id="ld2"></span>&deg; / <span id="hd2"></span>&deg;</td>
+                <td><span id="md2"></span> <span id="cd2"></span></td>
+                <td id="fd2"></td>
+            </tr>
+            <tr class="day3">
+                <td id="wd3"></td>
+                <td id="dd3"></td>
+                <td class="titulo"><span id="ld3"></span>&deg; / <span id="hd3"></span>&deg;</td>
+                <td><span id="md3"></span> <span id="cd3"></span></td>
+                <td id="fd3"></td>
+            </tr>
+            <tr class="day4">
+                <td id="wd4"></td>
+                <td id="dd4"></td>
+                <td class="titulo"><span id="ld4"></span>&deg; / <span id="hd4"></span>&deg;</td>
+                <td><span id="md4"></span> <span id="cd4"></span></td>
+                <td id="fd4"></td>
+            </tr>
+        </table>
+        <a href="preston.html">see more</a>
+    </div>
+    <div class="history">
+        <h2 class="titulo">This Day in History</h2>
+        <figure>
+            <img src="images/preston.png" alt="Town Hall">
+            <figcaption>Town Hall</figcaption>
+        </figure>
+        <p>Although temperatures rise, February is the snowiest month in some areas. The story is told of a shy Latter-day Saint man who often sat on the back row of the chapel alone. When a member of the elder’s quorum suddenly passed away, the bishop gave priesthood blessings to comfort the elder’s family members. Relief Society sisters brought in food. Well-meaning friends and neighbors visited with the family and said, “Let us know if there is anything we can do to help.” The story is told of a shy Latter-day Saint man who often sat on the back row of the chapel alone. When a member of the elder’s quorum suddenly passed away, the bishop gave priesthood blessings to comfort the elder’s family members. Relief Society sisters brought in food. Well-meaning friends and neighbors visited with the family and said, “Let us know if there is anything we can do to help.”</p>
+        <a href="gallery.html">see more</a>
+    </div>
+</main>
+
+<div class="info">
+    <div><h4>Address:</h4><b><i>the WEATHER site project</i></b><br>7620 Little River Turnpike<br>Arlington, VA 22449<br>&nbsp;</div>
+    <div><h4>Phone:</h4>(571) 232-1685<br><br><h4>Email:</h4>barbozalg@outlook.com</div>
+</div>
+
+<footer>
+    &copy;Luis Barboza &bull; <span id="currentDate"></span>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
+
+</body>
+</html>
