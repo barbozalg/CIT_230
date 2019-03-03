@@ -1,0 +1,47 @@
+/*   Medium Size   */
+@media only screen and (min-width: 1028px) {
+
+
+header, nav, main, .info, footer { max-width: 1024px; margin:auto; }
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header { padding-left: 20px; grid-template-columns: 95px auto; }
+header img { width:85px; }
+header div h1 { font-size:48px; margin-top: 2px; }
+header div h2 { font-size:24px; }
+.home { width:85px; }
+
+
+/*----------- NAVIGATION --------------*/
+nav button { display: none; }
+nav ul { display: block; margin-left: 20px; }
+nav ul.hide { display: block; }
+.clearfix:after { display: table; }
+
+
+/*----------- MAIN --------------*/
+main figure { width: 33%; }
+.current { min-height: 400px; }
+.forecast { width: 75%; }
+
+main.gallery figure { flex-basis: 32%; }
+main.gallery figure:hover { box-shadow: 0 0 50px #333; }
+
+.flxCntr { grid-template-columns: 12% 28% 12% 28%; grid-column-gap: 50px; }
+.flxCntr div { width: 100%; }
+.but { float: right; text-align: right; }
+.flxCntr div select { height: 49px; }
+
+.label { grid-column: span 4; }
+.butspac { grid-column: span 3; }
+.info { padding: 1.5%; }
+
+
+/*----------- FOOTER --------------*/
+
+
+} /* end of media query */
