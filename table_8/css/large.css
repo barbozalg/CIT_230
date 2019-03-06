@@ -31,13 +31,10 @@ main figure { width: 33%; }
 main.gallery figure { flex-basis: 32%; }
 main.gallery figure:hover { box-shadow: 0 0 50px #333; }
 
-.flxCntr { grid-template-columns: 12% 28% 12% 28%; grid-column-gap: 50px; }
+.flxCntr { grid-template-columns: 20% 45%; }
 .flxCntr div { width: 100%; }
 .but { float: right; text-align: right; }
-.flxCntr div select { height: 49px; }
 
-.label { grid-column: span 4; }
-.butspac { grid-column: span 3; }
 .info { padding: 1.5%; }
 
 
