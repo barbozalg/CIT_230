@@ -49,6 +49,7 @@ main.gallery figure { flex-basis: 48%; }
 .label { width: 100%; text-align: left; padding: 0px; }
 .flxCntr div fieldset { width: 100%; position: relative; left:-2px; text-align: left; }
 
+
 .info { padding: 2%; }
 .info div { width: 49%; display: inline-block; vertical-align: middle; }
 
