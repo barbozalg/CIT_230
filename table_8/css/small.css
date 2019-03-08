@@ -106,7 +106,7 @@ main.gallery figure figcaption { font-size: 12px; text-align: center; margin-bot
     grid-template-columns: 80%;
     min-width: 330px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     vertical-align: middle;
 }
@@ -118,7 +118,7 @@ main.gallery figure figcaption { font-size: 12px; text-align: center; margin-bot
     margin-left: 12.5%;
 }
 .flxCntr div input, .flxCntr div select, .flxCntr div textarea {
-    padding: 5px;
+    padding: 8px;
     font-size: 14px;
     width: 100%;
     font-family: Verdana, sans-serif;

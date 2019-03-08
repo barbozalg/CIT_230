@@ -31,7 +31,6 @@ main figure { width: 33%; }
 main.gallery figure { flex-basis: 32%; }
 main.gallery figure:hover { box-shadow: 0 0 50px #333; }
 
-.flxCntr { grid-template-columns: 20% 45%; }
 .flxCntr div { width: 100%; }
 .but { float: right; text-align: right; }
 

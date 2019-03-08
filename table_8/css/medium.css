@@ -42,18 +42,12 @@ main div { width: 48%; float: left; position: relative; margin-right: 10px; clea
 main.gallery { justify-content: space-around; }
 main.gallery figure { flex-basis: 48%; }
 
-.flxCntr { grid-template-columns: 30% 70%; }
-.flxCntr div, .butspac {
-    min-width: auto;
-    text-align: left;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+.flxCntr  { grid-template-columns: 70%; }
+.flxCntr div, .butspac { margin: 5px 10px; max-width: 500px; }
 .but { text-align: right; }
 .flxCntr div input[type="submit"] { width: 150px; float: right; }
-.label { width: 100%; grid-column: span 2; text-align: left; padding: 0px; }
-.flxCntr div fieldset { width: 100%; position: relative; left:-2px; }
+.label { width: 100%; text-align: left; padding: 0px; }
+.flxCntr div fieldset { width: 100%; position: relative; left:-2px; text-align: left; }
 
 .info { padding: 2%; }
 .info div { width: 49%; display: inline-block; vertical-align: middle; }
