@@ -9,6 +9,7 @@
       "name" : "Captain America",
       "age" : 21,
       "secretIdentity" : "Steve Rogers",
+      "phrase" : "I CAN DO THIS ALL DAY",
       "powers" : [
         "Agility",
         "Strength",
@@ -21,6 +22,7 @@
       "name" : "Iron Man",
       "age" : 44,
       "secretIdentity" : "Tony Stark",
+      "phrase" : "You Can Take Away My House, All my Tricks and Toys. One Thing You Can't Take Away...I Am Iron Man",
       "powers" : [
         "Super-Genius Intellect",
         "Combat Skills Outside of his Armor",
@@ -33,6 +35,7 @@
       "name" : "God of Thunder",
       "age" : 1055,
       "secretIdentity" : "Thor Odinson",
+      "phrase" : "I Choose to Run Towards my Problems and Not Away From Them. Because That's What Heroes Do",
       "powers" : [
         "Electrokinesis",
         "Powerful Hammer",
@@ -45,12 +48,39 @@
       "name" : "Hulk",
       "age" : 49,
       "secretIdentity" : "Bruce Banner",
+      "phrase" : "I Just Get so Angry All the Time! Hulk Always... Always Angry",
       "powers" : [
         "Unlimited Strength",
         "Regeneracion",
         "Never Tires",
         "Immune to Telepathy",
         "Fire Resistance"
+      ]
+    },
+    {
+      "name" : "Black Widow",
+      "age" : 32,
+      "secretIdentity" : "Natasha Romanoff",
+      "phrase" : "Regimes Fall Every Day. I Tend not to Weep Over That, I'm Russian, or I Was.",
+      "powers" : [
+        "Athlete",
+        "Gymnast",
+        "Acrobat",
+        "Expert Martial Artist",
+        "Extensive Espionage Training"
+      ]
+    },
+    {
+      "name" : "Hawkeye",
+      "age" : 1055,
+      "secretIdentity" : "Clint Barton",
+      "phrase" : "Just Can Not Seen to Miss",
+      "powers" : [
+        "Exceptional Fencer",
+        "Acrobat",
+        "Swordsman",
+        "Archer",
+        "Marksman"
       ]
     }
   ]

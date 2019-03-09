@@ -23,7 +23,9 @@
 
 var header = document.querySelector('header');
 var section = document.querySelector('section');
-var requestURL = 'https://barbozalg.github.io/CIT_230/lesson_9/heroesData.json';
+var requestURL = "https://barbozalg.github.io/CIT_230/lesson_9/heroesData.json";
+/* "http://localhost/CIT_230/lesson_9/heroesData.json" */
+/* "https://barbozalg.github.io/CIT_230/lesson_9/heroesData.json'; */
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -51,10 +53,12 @@ function showHeroes(jsonObj) {
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = heroes[i].name;
         myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
         myPara2.textContent = 'Age: ' + heroes[i].age;
+        myPara4.textContent = 'Phrase: ' + heroes[i].phrase;
         myPara3.textContent = 'Superpowers:';
         var superPowers = heroes[i].powers;
         for(var j = 0; j < superPowers.length; j++) {
@@ -65,6 +69,7 @@ function showHeroes(jsonObj) {
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara4);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
