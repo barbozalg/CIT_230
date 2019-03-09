@@ -1,0 +1,57 @@
+{
+  "teamName" : "Avengers",
+  "homeTown" : "New York City",
+  "formed" : 2012,
+  "secretBase" : "Avengers tower",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Captain America",
+      "age" : 21,
+      "secretIdentity" : "Steve Rogers",
+      "powers" : [
+        "Agility",
+        "Strength",
+        "Speed",
+        "Endurance",
+        "Reaction time superior to any Olympic athlete who ever competed"
+      ]
+    },
+    {
+      "name" : "Iron Man",
+      "age" : 44,
+      "secretIdentity" : "Tony Stark",
+      "powers" : [
+        "Super-Genius Intellect",
+        "Combat Skills Outside of his Armor",
+        "Stores his Suit in his Body",
+        "Super-Human Reflexes",
+        "Technopathy"
+      ]
+    },
+    {
+      "name" : "God of Thunder",
+      "age" : 1055,
+      "secretIdentity" : "Thor Odinson",
+      "powers" : [
+        "Electrokinesis",
+        "Powerful Hammer",
+        "Godlike Strength",
+        "Flight",
+        "Longevity"
+      ]
+    },
+    {
+      "name" : "Hulk",
+      "age" : 49,
+      "secretIdentity" : "Bruce Banner",
+      "powers" : [
+        "Unlimited Strength",
+        "Regeneracion",
+        "Never Tires",
+        "Immune to Telepathy",
+        "Fire Resistance"
+      ]
+    }
+  ]
+}
