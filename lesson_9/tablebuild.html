@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Table Practice as an element">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<title>Table Practice</title>
+
+<style>
+
+/*----------- GENERAL --------------*/
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body { margin: 30px; font-family: Ubuntu, sans-serif; font-size: 14px; }
+
+
+/*----------- MAIN --------------*/
+main table {
+    background-color: #e7f0ed;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    color: #000;
+    box-shadow: 10px 10px 10px #7499B0;
+}
+main table thead { background-color: #7FB9C2; font-size: 25px; font-weight: bold; }
+main table tr th {
+    padding: 6px 5px;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    background-color: #628CA6;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+main table tr td {
+    padding: 6px 5px;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    color: #000;
+    text-align: center;
+}
+.greene { background-color: #e7ffed; }
+.higher { background-color: #628CA6; color: #fff; }
+main table tfoot { background-color: #7FB9C2; font-size: 11px; }
+
+</style>
+
+</head>
+
+<body>
+
+<main>
+
+<table>
+<thead><tr><td colspan="3">ACME Wildwest</td></tr></thead>
+<tr>
+    <th>Period</th>
+    <th>Sales</th>
+    <th>Sales Goal</th>
+</tr>
+<tr>
+    <td>August</td>
+    <td>$3,590</td>
+    <td>$4,000</td>
+</tr>
+<tr class="greene">
+    <td>September</td>
+    <td>$4,420</td>
+    <td>$5,000</td>
+</tr>
+<tr>
+    <td>October</td>
+    <td>$4,870</td>
+    <td>$5,000</td>
+</tr>
+<tr class="greene">
+    <td>November</td>
+    <td>$8,610</td>
+    <td class="higher">$7,500</td>
+</tr>
+<tr>
+    <td>Black Friday</td>
+    <td colspan="2">$3,200</td>
+</tr>
+<tr class="greene">
+    <td>December</td>
+    <td>$6,820</td>
+    <td>$7,500</td>
+</tr>
+<tfoot><tr><td colspan="3">Compiled 02.27.2019 by Luis Barboza</td></tr></tfoot>
+</table>
+
+</main>
+
+</body>
+
+</html>

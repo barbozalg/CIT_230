@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="tWEATHERsp.com will be to keep up to date our customer with the most trustable and recent information. We will have our main cities (Preston, Soda Springs, Fish Haven and the possibility to customize with your favorite cities) with all the necessary information for our users, of course we will have updated information of the rest of the country and the world; also we will have Storm Center to make daily traces to the storm and the consequences in its wake, and finally the Gallery with photos, videos and reports with a history of the most outstanding events worldwide.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<title>The Weather Site Project - Storm Center</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="logo">
+    <div>
+        <h1>the<b>WEATHER</b>site<i>project</i></h1>
+        <h2>keeping <b>you</b> up to date</h2>
+    </div>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda_springs.html">Soda Springs</a></li>
+        <li><a href="fish_haven.html">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    
+<main>
+
+<form action="thanks.html" method="get">
+<div class="flxCntr">
+    <div class="label"><h2 class="titulo">Personal information</h2></div>
+    <div>Full Name</div>
+    <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" required></div>
+    <div>Email</div>
+    <div><input type="email" id="email" name="email" placeholder="user@email.org"></div>
+    <div>Phone Number</div>
+    <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" required></div>
+    <div>ZIP Code</div>
+    <div><input type="number" id="zip" name="zip" size="5" placeholder="Shipping Postal Code" required></div>
+    <div class="label"><h2 class="titulo">Storm Information</h2></div>
+    <div>Date</div>
+    <div><input type="date" id="sDate" name="sDate" value=""></div>
+    <div>Type</div>
+    <div>
+        <input type="text" id="sType" name="sType" list="tList">
+        <datalist id="tList">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">    
+        </datalist>
+    </div>
+    <div>Severity</div>
+    <div>
+        <fieldset>
+            <input type="range" id="sSeverity" name="sSeverity" min="1" max="10" value="5" step="1" oninput="adjustRating(this.value);" onchange="adjustRating(this.value);">
+            <span id="ratingvalue">5</span>
+        </fieldset>
+    </div>
+    <div>Region</div>
+    <div>
+        <select id="sRegion" name="sRegion">
+            <option value="" selected disabled>Select Region ...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+        </select>
+    </div>
+    <div class="label"><h2 class="titulo">General</h2></div>
+    <div>User In-Danger Level</div>
+    <div>
+        <fieldset>
+            <label><input type="radio" id="usr1" name="inDanger" value="Yes">Yes</label>
+            <label><input type="radio" id="usr2" name="inDanger" value="Maybe">Maybe</label>
+            <label><input type="radio" id="usr3" name="inDanger" value="No">No</label>
+        </fieldset>
+    </div>
+    <div>Additional Information or Comments</div>
+    <div><textarea id="comments" name="comments" rows="5"></textarea></div>
+    <div class="butspac">&nbsp;</div>
+    <div class="but"><input type="submit"></div>
+</div>
+</form>
+</main>
+
+<div class="info">
+    <div><h4>Address:</h4><b><i>the WEATHER site project</i></b><br>7620 Little River Turnpike<br>Arlington, VA 22449<br>&nbsp;</div>
+    <div><h4>Phone:</h4>(571) 232-1685<br><br><h4>Email:</h4>barbozalg@outlook.com</div>
+</div>
+
+<footer>
+    &copy;Luis Barboza &bull; <span id="currentDate"></span>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script>
+
+hoy();
+
+</script>
+
+</body>
+</html>
