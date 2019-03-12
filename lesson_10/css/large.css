@@ -1,0 +1,48 @@
+/*   Medium Size   */
+@media only screen and (min-width: 1028px) {
+
+
+header, nav, main, .info, footer { max-width: 1024px; margin:auto; }
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header { padding-left: 20px; grid-template-columns: 95px auto; }
+header img { width:85px; }
+header div h1 { font-size:48px; margin-top: 2px; }
+header div h2 { font-size:24px; }
+.home { width:85px; }
+
+
+/*----------- NAVIGATION --------------*/
+nav button { display: none; }
+nav ul { display: block; margin-left: 20px; }
+nav ul.hide { display: block; }
+.clearfix:after { display: table; }
+
+
+/*----------- MAIN --------------*/
+main figure { width: 33%; }
+.current { min-height: 400px; }
+.forecast { width: 75%; }
+
+.gallery figure { flex-basis: 32%; }
+.gallery figure:hover { box-shadow: 0 0 50px #1f4371; }
+
+main div { width: 48%; float: left; position: relative; margin-right: 18px; clear: none; }
+main div table { height: 240px; }
+
+.flxCntr div { width: 100%; }
+.but { float: right; text-align: right; }
+
+#oF div { width: 30%; }
+
+.info { padding: 1.5%; }
+
+
+/*----------- FOOTER --------------*/
+
+
+} /* end of media query */
