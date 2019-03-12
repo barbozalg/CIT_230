@@ -1,79 +1,152 @@
-<!DOCTYPE HTML>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
 
-a:link { color: blue;}
-a:visited { color: blue; }
-a:hover { color: white; background-color:blue; }
-a:active { color: red; background-color:gray; }
-
-nav ul { padding: 0; }
-
-h1 { color: navy; }
-
-#frame { padding: 10px; background-color: navy; }
-
-#me { float: right; }
-
-#copy { width: 100%; text-align: center; clear: both; }
-
-</style>
 <meta charset="utf-8">
-<title>LUIS BARBOZA</title>
+<meta name="description" content="tWEATHERsp.com will be to keep up to date our customer with the most trustable and recent information. We will have our main cities (Preston, Soda Springs, Fish Haven and the possibility to customize with your favorite cities) with all the necessary information for our users, of course we will have updated information of the rest of the country and the world; also we will have Storm Center to make daily traces to the storm and the consequences in its wake, and finally the Gallery with photos, videos and reports with a history of the most outstanding events worldwide.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<title>The Weather Site Project - Home</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-<h1>Bro Luis Gabriel Barboza</h1>
 
-<h2>Assignment Portal</h2>
+<header>
+    <img src="images/logo.png" alt="logo">
+    <div>
+        <h1>the<b>WEATHER</b>site<i>project</i></h1>
+        <h2>keeping <b>you</b> up to date</h2>
+    </div>
+</header>
 
-<div id="frame"><a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li class="active"><a href="index.html" class="home">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda_springs.html">Soda Springs</a></li>
+        <li><a href="fish_haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    
+<main class="init">
+    <div>
+        <table>
+        <tr>
+            <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
+            <td class="tdTonight"><h3>TONIGHT</h3></td>
+            <td class="tdTomorrow"><h3>TOMORROW</h3></td>
+        </tr>
+        <tr>
+            <td class="tdToday"><img src="images/today.png" alt="Today"></td>
+            <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
+            <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
+        </tr>
+        <tr>
+            <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
+            <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
+            <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
+        </tr>
+        </table>
+        <h2>Preston 03/09/2019</h2>
+        <a href="preston.html">see more</a>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td class="tdToday"><h3>TODAY</h3>SNOW SHOWERS</td>
+            <td class="tdTonight"><h3>TONIGHT</h3></td>
+            <td class="tdTomorrow"><h3>TOMORROW</h3></td>
+        </tr>
+        <tr>
+            <td class="tdToday"><img src="images/today.png" alt="Today"></td>
+            <td class="tdTonight"><img src="images/tonight.png" alt="Tonight"></td>
+            <td class="tdTomorrow"><img src="images/tomorrow.png" alt="Tomorrow"></td>
+        </tr>
+        <tr>
+            <td class="tdToday">HIGH<h1>25&deg;</h1>100%</td>
+            <td class="tdTonight">LOW<h1>18&deg;</h1>10%</td>
+            <td class="tdTomorrow">HIGH<h1>43&deg;</h1>10%</td>
+        </tr>
+        </table>
+        <h2>Soda Springs 03/09/2019</h2>
+        <a href="soda_springs.html">see more</a>
+    </div>
+    <h1 class="titulo" style="clear:both;">Towns Information</h1>
+    <div id="oF"></div>
+    <div>
+        <figure>
+            <img src="images/map.jpg" alt="USA Map">
+            <figcaption>USA NATIONAL FORECAST</figcaption>
+        </figure>
+        <h2>MARCH: More Daylight, Temps Rise, But It's Not All Good</h2>
+        <p>Although temperatures rise, February is the snowiest month in some areas.</p>
+        <a href="gallery.html">see more</a>
+    </div>
+    <div>
+        <figure>
+            <img src="images/map.png" alt="USA Map">
+            <figcaption>EAST REGION FORECAST</figcaption>
+        </figure>
+        <h2>SEVERE WEATHER</h2>
+        <p>Although temperatures rise, inclement weather today from the afternoon</p>
+        <a href="gallery.html">see more</a>
+    </div>
+</main>
 
-<hr>
+<div class="info">
+    <div><h4>Address:</h4><b><i>the WEATHER site project</i></b><br>7620 Little River Turnpike<br>Arlington, VA 22449<br>&nbsp;</div>
+    <div><h4>Phone:</h4>(571) 232-1685<br><br><h4>Email:</h4>barbozalg@outlook.com</div>
+</div>
 
-<h1>Home</h1>
+<footer>
+    &copy;Luis Barboza &bull; <span id="currentDate"></span>
+</footer>
 
-<img id="me" src="p25.jpg" width="200" height="200" alt="My Pic">
+<script src="scripts/currentdate.js"></script>
 
-<ul>
-	<li>Week 1 - actual page</li>
-	<li><a href="../temple1/">Week 2 - temple1</a></li>
-	<li><a href="fixhtml/fixedhtml.html">Week 3 - fixedhtml</a></li>
-	<li><a href="design/index.html">Week 3 - design</a></li>
-    <li><a href="lesson_4/weathersiteplan.pdf">Week 4 - Weather Site Plan</a></li>
-	<li><a href="lesson_4/index.html">Week 4 - Weather Site</a></li>
-    <li>
-        <a href="lesson_5/index.html">Week 5 - Weather Site II</a> / 
-        <a href="lesson_5/preston.html">[ Preston ]</a>
-    </li>
-    <li>
-        <a href="weather6/index.html">Week 6 - Weather Site III</a> / 
-        <a href="weather6/preston.html">[ Preston ]</a>
-    </li>
-    <li>
-        <a href="lesson_7/index.html">Week 7 - Weather Site IV</a> / 
-        <a href="lesson_7/gallery.html">[ Gallery ]</a> / 
-        <a href="lesson_7/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="table_8/tablebuild.html">week 8 - tablebuild</a></li>
-    <li>
-        <a href="table_8/index.html">Week 8 - Weather Site V</a> / 
-        <a href="table_8/stormcenter.html">[ Storm Center ]</a> /
-        <a href="table_8/gallery.html">[ Gallery ]</a> / 
-        <a href="table_8/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="lesson_9/heroes.html">week 9 - Heroes(JSON)</a></li>
-    <li>
-        <a href="lesson_9/index.html">Week 9 - Weather Site VI / [ Index ] </a> / 
-        <a href="lesson_9/stormcenter.html">[ Storm Center ]</a> / 
-        <a href="lesson_9/gallery.html">[ Gallery ]</a> / 
-        <a href="lesson_9/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="lesson_9/api-test.html">Week 10 - API Test</a></li>
-    <li>
-        <a href="lesson_10/index.html">Week 10 - Weather Site VII / [ Index ] </a>
-    </li>
-</ul>
-<div id="copy">&copy; Luis Barboza 2019</div>
+<script>
+
+function addNewItem(towns){
+    myDiv = gObj('oF');
+    var m = document.createElement('div');
+    var n = document.createElement('div');
+    n.innerHTML = "<span>"+ towns['name'] +"</span><br><b><i>"+ towns['motto'] +"</i></b><br><b>Year Founded:</b> "+ towns['yearFounded'] +"<br><b>Current Population:</b> "+ towns['currentPopulation'] +"<br><b>Average Rain Fall:</b> "+ towns['averageRainfall'] +"<img src='images/"+ towns['imgSrc'] +"'>";
+    m.appendChild(n);
+    myDiv.appendChild(m);
+}
+       
+var requestURL = "https://barbozalg.github.io/CIT_230/lesson_9/townData.json";
+/* "http://localhost/CIT_230/lesson_9/townData.json" */
+/* "https://barbozalg.github.io/CIT_230/lesson_9/townData.json" */
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+    var t = request.response;
+    for(var i=0; i<t['towns'].length; i++){
+        addNewItem(t['towns'][i]);
+    }
+}
+
+</script>
+
 </body>
 </html>
