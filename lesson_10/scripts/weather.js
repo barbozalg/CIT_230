@@ -84,7 +84,7 @@ wObj.send();
 wObj.onload = function() {
     var wInfo = JSON.parse(wObj.responseText);
     console.log(wInfo);
-    gObj("current").innerHTML = wInfo.weather[0].description;
+    gObj("current").innerHTML = fisrtCaps(wInfo.weather[0].description);
     gObj("temp").innerHTML = wInfo.main.temp;
     gObj("humid").innerHTML = wInfo.main.humidity;
     gObj("precip").innerHTML = 0;
