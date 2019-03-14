@@ -55,11 +55,53 @@
                     images/weather_large.jpg 1300w">
         </figure>
         <div>
-            <h2 class="titulo">Current Conditions</h2>
-            Partly Cloudy<br>
-            Low: 36&deg;<br>
-            High: 45&deg;
+            <h2 class="titulo">Weather Summary</h2>
+            <table id="cTable">
+                <tr>
+                    <td class="lTd">Currently:</td>
+                    <td class="rTd" id="current">--</td>
+                </tr>
+                <tr>
+                    <td class="lTd">Temperature:</td>
+                    <td class="rTd"><span id="temp">00</span> &deg;F</td>
+                </tr>
+                <tr>
+                    <td class="lTd">Humidity:</td>
+                    <td class="rTd"><span id="humid">00</span>%</td>
+                </tr>
+                <tr>
+                    <td class="lTd">Precipitation:</td>
+                    <td class="rTd"><span id="precip">00</span> inches</td>
+                </tr>
+                <tr>
+                    <td class="lTd">Wind Speed:</td>
+                    <td class="rTd"><span id="wSpeed">00</span> mph</td>
+                </tr>
+            </table>
         </div>
+    </div>
+
+    <div class="foreCH">
+        <h2 class="titulo">High Temperature Forecast</h2>
+        <table>
+            <tr class="dayt">
+                <td>Day</td>
+                <td id="dS0">DoW</td>
+                <td id="dS1">DoW</td>
+                <td id="dS2">DoW</td>
+                <td id="dS3">DoW</td>
+                <td id="dS4">DoW</td>
+            </tr>
+            <tr class="dayt">
+                <td>Forecast</td>
+                <td class="cfa"><span id="tf0">00</span>&deg; F</td>
+                <td class="cfa"><span id="tf1">00</span>&deg; F</td>
+                <td class="cfa"><span id="tf2">00</span>&deg; F</td>
+                <td class="cfa"><span id="tf3">00</span>&deg; F</td>
+                <td class="cfa"><span id="tf4">00</span>&deg; F</td>
+            </tr>
+        </table>
+        <a href="preston.html">see more</a>
     </div>
 
     <div class="forecast">
@@ -131,7 +173,7 @@
 </footer>
 
 <script src="scripts/currentdate.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
 
 </body>
 </html>
