@@ -61,7 +61,7 @@ nav ul li.active a:hover { background-color: #ffca18; color: #111; }
 main { min-height: 10rem; padding: 0.5rem 2%; min-width: 260px; }
 .init { padding-top: 1rem; }
 .titulo { font-family: 'Lobster', cursive; }
-.current { position: relative; width: 100%; min-width: 280px; height: auto; }
+.current { position: relative; width: 100%; min-width: 352px; height: auto; }
 .current figure { width: 100%; height: auto; }
 .current figure img { width: 100%; height: auto; }
 .current div {
@@ -75,7 +75,13 @@ main { min-height: 10rem; padding: 0.5rem 2%; min-width: 260px; }
     font-size: 14px;
 }
 .current div h2 { font-size: 18px; }
-.forecast{ display: none; }
+.dayt{ background-color: #111; font-family: 'Lobster', cursive; font-size: 16px }
+.forecast { display: none; }
+.foreCH { width: 100%; top: -15px; }
+.foreCH table tr td { padding: 5px; border: #111 solid 1px; }
+.cfa { background-color: #1f4371; }
+.history { top: -15px; }
+
 main div { position: relative; min-width: 260px; margin-bottom: 3% }
 main div figure { width: 100%; margin: 0; margin: .2%; }
 main div figure img { width: 100%; }
@@ -164,6 +170,10 @@ main div p { text-align: justify; }
 #ratingvalue { text-align: right; font-size: 11px; }
 .rqrd { color: #f79e1c; }
 
+#cTable { font-size: 11px; padding: 0px; width: 100%; min-width: 0px; }
+#cTable td{ padding: 2px; }
+.lTd { text-align: right; font-weight: bold; width: 50%; }
+.rTd { text-align: left; width: 50%; }
 
 .info{ font-size: 12px; background-color: #ffca18; padding: 5% 3%; clear: both; height: auto; }
 .info h4 { margin: 0 0 5px 0; padding: 0; font-size: 14px; }

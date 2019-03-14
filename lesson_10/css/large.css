@@ -26,7 +26,10 @@ nav ul.hide { display: block; }
 /*----------- MAIN --------------*/
 main figure { width: 33%; }
 .current { min-height: 400px; }
-.forecast { width: 75%; }
+.foreCH { width: 40%; }
+.foreCH table { height: auto; }
+.foreCH table td { font-size: 22px; }
+.forecast { width: 58%; margin-right: 0px;}
 
 .gallery figure { flex-basis: 32%; }
 .gallery figure:hover { box-shadow: 0 0 50px #1f4371; }
@@ -38,6 +41,9 @@ main div table { height: 240px; }
 .but { float: right; text-align: right; }
 
 #oF div { width: 30%; }
+
+.current div h2 { font-size: 24px; }
+#cTable { font-size: 16px; height: auto; }
 
 .info { padding: 1.5%; }
 
