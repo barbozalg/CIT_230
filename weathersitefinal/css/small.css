@@ -114,7 +114,6 @@ main div p { text-align: justify; }
     padding: 0px 10px 10px 10px;
     width: 100%;
     justify-content: space-around;
-    align-self: left;
 }
 #oF div { margin-top: 10px; width: auto; text-align: center; }
 #oF div div {
