@@ -1,79 +1,114 @@
-<!DOCTYPE HTML>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
-<style>
 
-a:link { color: blue;}
-a:visited { color: blue; }
-a:hover { color: white; background-color:blue; }
-a:active { color: red; background-color:gray; }
-
-nav ul { padding: 0; }
-
-h1 { color: navy; }
-
-#frame { padding: 10px; background-color: navy; }
-
-#me { float: right; }
-
-#copy { width: 100%; text-align: center; clear: both; }
-
-</style>
 <meta charset="utf-8">
-<title>LUIS BARBOZA</title>
+<meta name="description" content="Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. We caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#284259">
+<meta name="theme-color" content="#ffffff">
+
+<title>Temple Inn & Suites | Information and accommodation of your nearest temple | The church of Jesus Christ of Latter Day Saints</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-<h1>Bro Luis Gabriel Barboza</h1>
 
-<h2>Assignment Portal</h2>
+<header>
+    <a href="index.html">
+        <img src="images/logo.png"
+        srcset="images/logo_30x30.png 30w,
+                images/logo_60x60.png 60w,
+                images/logo_86x86.png 86w"
+        sizes="100vw" alt="logo">
+    </a>
+    <div>
+        <h1>Temple Inn &amp; Suites</h1>
+        <h2>On your way to the temple</h2>
+    </div>
+    <div id="dateS" class="dateHeader"></div>
+    <div id="dateL" class="dateHeader"></div>
+</header>
 
-<div id="frame"><a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="search"><table><tr><td class="td">Search&nbsp;&nbsp;</td><td class="img"><img src="images/magnifier.png" alt="search"></td></tr></table></button>
+</nav>
+    
+<main>
+    <img src="images/family.png"
+        srcset="images/family_small.png 560w,
+                images/family_medium.png 1024w,
+                images/family_large.png 1300w"
+    sizes="100vw" alt="Family" class="family">
 
-<hr>
+<h1>Families Are Sacred</h1>
 
-<h1>Home</h1>
+<p>The sweetest relationships we can experience in life are in loving families. 
+Husbands and wives, parents and children, brothers and sisters—these are the 
+people that shape our hearts and fill our lives.</p>
+<p>President Gordon B. Hinckley (1910-2008) reflected:<br><br>
+“Was there ever a man who truly loved a woman, or a 
+woman who truly loved a man, who did not pray that 
+their relationship might continue beyond the grave? 
+Has a child ever been buried by parents who did not 
+long for the assurance that their loved one would 
+again be theirs in a world to come? Can anyone 
+believing in eternal life doubt that the God of heaven 
+would grant His sons and daughters that most precious 
+attribute of life, the love that finds its most meaningful 
+expression in family relationships? No, reason demands 
+that the family relationship shall continue after death. 
+The human heart longs for it, and the God of heaven has 
+revealed a way whereby it may be secured. The sacred 
+ordinances of the house of the Lord provide for it” 
+(“Why These Temples?” Liahona or Ensign, Oct. 2010, 24).</p>
+<p><a href="https://www.lds.org/temples/families-and-the-temple?lang=eng">See more...</a></p>
 
-<img id="me" src="p25.jpg" width="200" height="200" alt="My Pic">
+<h1>Our Principal Services</h1>
 
-<ul>
-    <li>Week 1 - actual page</li>
-    <li><a href="../temple1/">Week 2 - temple1</a></li>
-    <li><a href="fixhtml/fixedhtml.html">Week 3 - fixedhtml</a></li>
-    <li><a href="design/index.html">Week 3 - design</a></li>
-    <li><a href="lesson_4/weathersiteplan.pdf">Week 4 - Weather Site Plan</a></li>
-    <li><a href="lesson_4/index.html">Week 4 - Weather Site</a></li>
-    <li>
-        <a href="lesson_5/index.html">Week 5 - Weather Site II</a> / 
-        <a href="lesson_5/preston.html">[ Preston ]</a>
-    </li>
-    <li>
-        <a href="weather6/index.html">Week 6 - Weather Site III</a> / 
-        <a href="weather6/preston.html">[ Preston ]</a>
-    </li>
-    <li>
-        <a href="lesson_7/index.html">Week 7 - Weather Site IV</a> / 
-        <a href="lesson_7/gallery.html">[ Gallery ]</a> / 
-        <a href="lesson_7/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="table_8/tablebuild.html">week 8 - tablebuild</a></li>
-    <li>
-        <a href="table_8/index.html">Week 8 - Weather Site V</a> / 
-        <a href="table_8/stormcenter.html">[ Storm Center ]</a> /
-        <a href="table_8/gallery.html">[ Gallery ]</a> / 
-        <a href="table_8/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="lesson_9/heroes.html">week 9 - Heroes(JSON)</a></li>
-    <li>
-        <a href="lesson_9/index.html">Week 9 - Weather Site VI / [ Index ] </a> / 
-        <a href="lesson_9/stormcenter.html">[ Storm Center ]</a> / 
-        <a href="lesson_9/gallery.html">[ Gallery ]</a> / 
-        <a href="lesson_9/preston.html">[ Preston ]</a>
-    </li>
-    <li><a href="lesson_9/api-test.html">Week 10 - API Test</a></li>
-    <li><a href="lesson_10/index.html">Week 10 - Weather Site VII / [ Index ] Usability Discussion</a></li>
-    <li><a href="lesson_10/preston.html">Week 10 - Weather Site VIII / [ Preston ] Current Weather and Forecast 5 days</a></li>
-    <li><a href="weathersitefinal/index.html">Week 11 - Weather Site Final</a></li>
-</ul>
-<div id="copy">&copy; Luis Barboza 2019</div>
+<div class="services">
+    <div>
+        <img src="images/room.jpg" alt="Room">
+        <h2>Lodging</h2>
+    </div>
+    <div>
+        <img src="images/sealing.jpg" alt="Sealing">
+        <h2>Receptions</h2>
+    </div>
+    <div>
+        <img src="images/daycare.jpg" alt="Daycare">
+        <h2>Daycare</h2>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <div><h4>Address:</h4><b><br><i>Temple Inn & Suites</i>headquarters</b><br>9101 Rockville Pike<br>Bethesda, MD 20814<br>&nbsp;</div>
+    <div><h4>Phone:</h4>(571) 232-1685<br><br><h4>Email:</h4>barbozalg@outlook.com</div>
+    <div class="copy">&copy;Luis Barboza &bull; <span id="dateY"></span></div>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+
+
 </body>
 </html>
