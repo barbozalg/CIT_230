@@ -46,6 +46,7 @@ wObj1.onload = function() {
     nO.href = ((wInfo.temples[tmplID].tLinkEml=="Does not have email")? "javascript:void;" : wInfo.temples[tmplID].tLinkCal);
     gObj("tServices").innerHTML = wInfo.temples[tmplID].tServices;
     gObj("tLinkCal").href = wInfo.temples[tmplID].tLinkCal;
+    gObj("tLinkGal").href = wInfo.temples[tmplID].tLinkCal;
     gObj("tClosures").innerHTML = wInfo.temples[tmplID].tClosures;
     gObj("tMilestone").innerHTML = wInfo.temples[tmplID].tMilestone;
 }
