@@ -1,0 +1,59 @@
+{
+    "temples" : [
+        {
+            "tImg": "caracas_venezuela_temple.jpg",
+            "tName": "Caracas Venezuela Temple",
+            "tAddress": "Avenida. C con Calle C-1, Urb Caurimare<br>Caracas 1062-A, Dependencias Federales<br>Venezuela",
+            "tPhone": "(58) 212-981-1873",
+            "tLinkEml": "Does not have email",
+            "tServices": "No clothing rental available<br>No cafeteria available<br>No patron housing available<br>Distribution center nearby",
+            "tLinkCal": "https://www.lds.org/temples/details/caracas-venezuela-temple?lang=eng",
+            "tClosures": "<b>2019</b><br>Monday, 23 September 2019 - Monday, 7 October 2019",
+            "tMilestone": "30 September 1995 - Announced<br>10 January 1999 - Groundbreaking<br>20 August 2000 - Dedicated (dedicatory prayer)"
+        },
+        {
+            "tImg": "bogota_colombia_temple.jpg",
+            "tName": "Bogota Colombia Temple",
+            "tAddress": "Carrera 46 N°127-45<br>Bogota Distrito Capital<br>Colombia",
+            "tPhone": "(57) 1-625-8000",
+            "tLinkEml": "Log in to send email to temple",
+            "tServices": "Clothing rental available<br>Cafeteria available<br>Patron housing available<br>Distribution center nearby",
+            "tLinkCal": "https://www.lds.org/temples/details/bogota-colombia-temple?lang=eng",
+            "tClosures": "<b>2019</b><br>Wednesday, 1 May 2019<br>Saturday, 20 July 2019<br>Wednesday, 7 August 2019<br>Tuesday, 10 September 2019<br>Monday, 23 September 2019<br>Saturday, 5 October 2019<br>Sunday, 8 December 2019<br>Tuesday, 24 December 2019<br>Wednesday, 25 December 2019<br>Tuesday, 31 December 2019",
+            "tMilestone": "7 April 1984 - Announced<br>26 June 1993 - Groundbreaking<br>24 April 1999 - Dedicated (dedicatory prayer)"
+        },
+        {
+            "tImg": "panama_city_temple.jpg",
+            "tName": "Panama City Temple",
+            "tAddress": "Calle Rufina Alfaro #3172<br>Hacia La Villa de Cardenas<br>Corozal, Ancon, Provincia de Panama, Panama",
+            "tPhone": "(507) 201-6234",
+            "tLinkEml": "Log in to send email to temple",
+            "tServices": "No clothing rental available<br>No cafeteria available<br>Patron housing available<br>Distribution center nearby",
+            "tLinkCal": "https://www.lds.org/temples/details/panama-city-panama-temple?lang=eng",
+            "tClosures": "<b>2019</b><br>Monday, 18 February 2019 - Monday, 15 April 2019<br>Friday, 19 April 2019 (Limited Hours)<br>Wednesday, 1 May 2019 (Limited Hours)<br>Monday, 12 August 2019 - Monday, 26 August 2019<br>Saturday, 5 October 2019<br>Thursday, 28 November 2019 (Limited Hours)<br>Tuesday, 24 December 2019<br>Wednesday, 25 December 2019",
+            "tMilestone": "23 August 2002 - Announced<br>30 October 2005 - Groundbreaking<br>10 August 2008 - Dedicated (dedicatory prayer)"
+        },
+        {
+            "tImg": "guayaquil_ecuador_temple.jpg",
+            "tName": "Guayaquil Ecuador Temple",
+            "tAddress": "6ta y Av. Rodrigo Chavez<br>Principado de las Lomas<br>Templo de Guayaquil, Urdesa Norte, Guayaquil, Ecuador",
+            "tPhone": "(593) 4-371-8100",
+            "tLinkEml": "Log in to send email to temple",
+            "tServices": "Clothing rental available<br>Cafeteria available<br>Patron housing available<br>Distribution center nearby",
+            "tLinkCal": "https://www.lds.org/temples/details/guayaquil-ecuador-temple?lang=eng",
+            "tClosures": "<b>2019</b><br>Friday, 19 April 2019 (Limited Hours)<br>Wednesday, 1 May 2019 (Limited Hours)<br>Friday, 24 May 2019 (Limited Hours)<br>Monday, 16 September 2019 - Monday, 30 September 2019<br>Friday, 11 October 2019 (Limited Hours)<br>Tuesday, 24 December 2019 (Limited Hours)<br>Wednesday, 25 December 2019 (Limited Hours)",
+            "tMilestone": "31 March 1982 - Announced<br>10 August 1996 - Groundbreaking<br>1 August 1999 - Dedicated (dedicatory prayer)"
+        },
+        {
+            "tImg": "manaus_brazil_temple.jpg",
+            "tName": "Manaus Brazil Temple",
+            "tAddress": "Avenida Coronel Texeira #3162<br>Ponta Negra<br>69037-000 Manaus - AM, Brazil",
+            "tPhone": "(55) 92-3212-7270",
+            "tLinkEml": "Log in to send email to temple",
+            "tServices": "No clothing rental available<br>No cafeteria available<br>Patron housing available<br>Distribution center nearby",
+            "tLinkCal": "https://www.lds.org/temples/details/manaus-brazil-temple?lang=eng",
+            "tClosures": "<b>2019</b><br>Monday, 29 April 2019 - Monday, 13 May 2019<br>Saturday, 5 October 2019 - Sunday, 6 October 2019<br>Monday, 28 October 2019 - Monday, 11 November 2019<br>Tuesday, 24 December 2019 - Wednesday, 25 December 2019<br>Tuesday, 31 December 2019 - Wednesday, 1 January 2020",
+            "tMilestone": "23 May 2007 - Announced<br>20 June 2008 - Groundbreaking<br>10 June 2012 - Dedicated (dedicatory prayer)"
+        }
+    ]
+}

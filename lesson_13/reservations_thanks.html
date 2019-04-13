@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. We caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#284259">
+<meta name="theme-color" content="#ffffff">
+
+<title>Temple Inn & Suites | Reserve your room or suite</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
+<style>
+
+select { background-color: #ebebe4; color: #545454; }
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="images/logo.png"
+        srcset="images/logo_30x30.png 30w,
+                images/logo_60x60.png 60w,
+                images/logo_86x86.png 86w"
+        sizes="100vw" alt="logo">
+    </a>
+    <div>
+        <h1>Temple Inn &amp; Suites</h1>
+        <h2>On your way to the temple</h2>
+    </div>
+    <div id="dateS" class="dateHeader"></div>
+    <div id="dateL" class="dateHeader"></div>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li class="active"><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="search"><table><tr><td class="td">Search&nbsp;&nbsp;</td><td class="img"><img src="images/magnifier.png" alt="search"></td></tr></table></button>
+</nav>
+    
+<main>
+    <a href="reservations.html" class="enlace">Close</a><br>&nbsp;<br>
+    <h1>Reservations</h1>
+    <div id="genForm">
+        <div class="flxCntr">
+            <div class="label"><h2 class="titulo" style="margin-top: 0px; padding-top: 0px;">Personal information</h2></div>
+            <div>Full Name <span class="rqrd">*</span></div>
+            <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" disabled></div>
+            <div>Email</div>
+            <div><input type="email" id="email" name="email" placeholder="user@email.org" disabled></div>
+            <div>Phone Number <span class="rqrd">*</span></div>
+            <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" disabled></div>
+            <div class="label"><h2 class="titulo" style="margin-top: 0px; padding-top: 0px;">Reservation information</h2></div>
+            <div>Temple <span class="rqrd">*</span></div>
+            <div>
+                <input type="text" id="temple" name="temple" list="tList" disabled>
+                <datalist id="tList">
+                    <option value="Aba, Nigeria">
+                    <option value="Abidjan, Ivory Coast">
+                    <option value="Accra, Ghana">
+                    <option value="Adelaide, Australia">
+                    <option value="Albuquerque, USA">
+                    <option value="Anchorage, USA">
+                    <option value="Antofagasta, Chile">
+                    <option value="Apia, Samoa">
+                    <option value="Arequipa, Peru">
+                    <option value="Asuncion, Paraguay">
+                    <option value="Atlanta, USA">
+                    <option value="Auckland, New Zealand">
+                    <option value="Bangkok, Thailand">
+                    <option value="Barranquilla, Colombia">
+                    <option value="Baton Rouge, USA">
+                    <option value="Belem, Brazil">
+                    <option value="Bengaluru, India">
+                    <option value="Bern, Switzerland">
+                    <option value="Billings Montana, USA">
+                    <option value="Birmingham, USA">
+                    <option value="Bismarck, USA">
+                    <option value="Bogota, Colombia">
+                    <option value="Boise, USA">
+                    <option value="Boston, USA">
+                    <option value="Bountiful, USA">
+                    <option value="Brasilia, Brazil">
+                    <option value="Brigham City, USA">
+                    <option value="Brisbane, Australia">
+                    <option value="Budapest, Hungary">
+                    <option value="Buenos Aires, Argentina">
+                    <option value="Cagayan de Oro, Philippines">
+                    <option value="Calgary, Canada">
+                    <option value="Campinas, Brazil">
+                    <option value="Caracas, Venezuela">
+                    <option value="Cardston, Canada">
+                    <option value="Cebu City, Philippines">
+                    <option value="Cedar City, USA">
+                    <option value="Chicago, USA">
+                    <option value="Ciudad Juarez, Mexico">
+                    <option value="Cochabamba, Bolivia">
+                    <option value="Colonia Juarez, Mexico">
+                    <option value="Columbia River, USA">
+                    <option value="Columbia, USA">
+                    <option value="Columbus, USA">
+                    <option value="Concepcion, Chile">
+                    <option value="Copenhagen, Denmark">
+                    <option value="Cordoba, Argentina">
+                    <option value="Curitiba, Brazil">
+                    <option value="Dallas, USA">
+                    <option value="Davao, Philippines">
+                    <option value="Denver, USA">
+                    <option value="Detroit, USA">
+                    <option value="Draper, USA">
+                    <option value="Durban, South Africa">
+                    <option value="Edmonton, Canada">
+                    <option value="Fort Collins, USA">
+                    <option value="Fort Lauderdale, USA">
+                    <option value="Fortaleza, Brazil">
+                    <option value="Frankfurt, Germany">
+                    <option value="Freiberg, Germany">
+                    <option value="Fresno, USA">
+                    <option value="Fukuoka, Japan">
+                    <option value="Gilbert, USA">
+                    <option value="Greater Manila, Philippines">
+                    <option value="Guadalajara, Mexico">
+                    <option value="Guatemala City, Guatemala">
+                    <option value="Guayaquil, Ecuador">
+                    <option value="Halifax, Canada">
+                    <option value="Hamilton, New Zealand">
+                    <option value="Harare, Zimbabwe">
+                    <option value="Hartford, USA">
+                    <option value="Helsinki, Finland">
+                    <option value="Hermosillo, Mexico">
+                    <option value="Hong Kong, China">
+                    <option value="Houston, USA">
+                    <option value="Idaho Falls, USA">
+                    <option value="Indianapolis, USA">
+                    <option value="Johannesburg, South Africa">
+                    <option value="Jordan River, USA">
+                    <option value="Kansas City, USA">
+                    <option value="Kinshasa Democratic, Republic of the Congo">
+                    <option value="Kona, USA">
+                    <option value="Kyiv, Ukraine">
+                    <option value="Lagos, Nigeria">
+                    <option value="Laie, USA">
+                    <option value="Las Vegas, USA">
+                    <option value="Layton, USA">
+                    <option value="Lima, Peru">
+                    <option value="Lima - Los Olivos, Peru">
+                    <option value="Lisbon, Portugal">
+                    <option value="Logan, USA">
+                    <option value="London, England">
+                    <option value="Los Angeles, USA">
+                    <option value="Louisville, USA">
+                    <option value="Lubbock, USA">
+                    <option value="Madrid, Spain">
+                    <option value="Managua, Nicaragua">
+                    <option value="Manaus, Brazil">
+                    <option value="Manhattan New York, USA">
+                    <option value="Manila, Philippines">
+                    <option value="Manti, USA">
+                    <option value="Medford, USA">
+                    <option value="Melbourne, Australia">
+                    <option value="Memphis, USA">
+                    <option value="Mendoza, Argentina">
+                    <option value="Merida, Mexico">
+                    <option value="Meridian, USA">
+                    <option value="Mesa, USA">
+                    <option value="Mexico City, Mexico">
+                    <option value="Monterrey, Mexico">
+                    <option value="Montevideo, Uruguay">
+                    <option value="Monticello, USA">
+                    <option value="Montreal, Canada">
+                    <option value="Moses Lake, USA">
+                    <option value="Mount Timpanogos, USA">
+                    <option value="Nairobi, Kenya">
+                    <option value="Nashville, USA">
+                    <option value="Nauvoo, USA">
+                    <option value="Neiafu, Tonga">
+                    <option value="Newport Beach, USA">
+                    <option value="Nuku'alofa, Tonga">
+                    <option value="Oakland, USA">
+                    <option value="Oaxaca, Mexico">
+                    <option value="Ogden, USA">
+                    <option value="Okinawa City, Okinawa">
+                    <option value="Oklahoma City, USA">
+                    <option value="Oquirrh Mountain, USA">
+                    <option value="Orlando, USA">
+                    <option value="Pago Pago, American Samoa">
+                    <option value="Palmyra, USA">
+                    <option value="Panama City, Panama">
+                    <option value="Papeete, Tahiti">
+                    <option value="Paris, France">
+                    <option value="Payson, USA">
+                    <option value="Perth, Australia">
+                    <option value="Philadelphia, USA">
+                    <option value="Phnom Penh, Cambodia">
+                    <option value="Phoenix, USA">
+                    <option value="Pocatello, USA">
+                    <option value="Port-Au-Prince, Haiti">
+                    <option value="Portland, USA">
+                    <option value="Porto Alegre, Brazil">
+                    <option value="Praia, Cape Verde">
+                    <option value="Preston, England">
+                    <option value="Provo City Center, USA">
+                    <option value="Provo, USA">
+                    <option value="Puebla, Mexico">
+                    <option value="Quetzaltenango, Guatemala">
+                    <option value="Quito, Ecuador">
+                    <option value="Raleigh, USA">
+                    <option value="Recife, Brazil">
+                    <option value="Redlands, USA">
+                    <option value="Regina, Canada">
+                    <option value="Reno, USA">
+                    <option value="Rexburg, USA">
+                    <option value="Richmond, USA">
+                    <option value="Rio de Janeiro, Brazil">
+                    <option value="Rome, Italy">
+                    <option value="Russia, Russia">
+                    <option value="Sacramento, USA">
+                    <option value="Salt Lake, USA">
+                    <option value="Salta, Argentina">
+                    <option value="Salvador, Brazil">
+                    <option value="San Antonio, USA">
+                    <option value="San Diego, USA">
+                    <option value="San Jose, Costa Rica">
+                    <option value="San Juan, Puerto Rico">
+                    <option value="San Pedro Sula, Honduras">
+                    <option value="San Salvador, El Salvador">
+                    <option value="Santiago, Chile">
+                    <option value="Santo Domingo, Dominican Republic">
+                    <option value="Sao Paulo, Brazil">
+                    <option value="Sapporo, Japan">
+                    <option value="Saratoga Springs, USA">
+                    <option value="Seattle, USA">
+                    <option value="Seoul, Korea">
+                    <option value="Snowflake, USA">
+                    <option value="Spokane, USA">
+                    <option value="Saint George, USA">
+                    <option value="Saint Louis, USA">
+                    <option value="Saint Paul, USA">
+                    <option value="Star Valley, USA">
+                    <option value="Stockholm, Sweden">
+                    <option value="Suva, Fiji">
+                    <option value="Sydney, Australia">
+                    <option value="Taipei, Taiwan">
+                    <option value="Tampico, Mexico">
+                    <option value="Tegucigalpa, Honduras">
+                    <option value="The Gila Valley, USA">
+                    <option value="The Hague, Netherlands">
+                    <option value="Tijuana, Mexico">
+                    <option value="Tokyo, Japan">
+                    <option value="Tooele Valley, USA">
+                    <option value="Toronto, Canada">
+                    <option value="Trujillo, Peru">
+                    <option value="Tucson, USA">
+                    <option value="Tuxtla Gutierrez, Mexico">
+                    <option value="Twin Falls, USA">
+                    <option value="Urdaneta, Philippines">
+                    <option value="Vancouver, Canada">
+                    <option value="Veracruz, Mexico">
+                    <option value="Vernal, USA">
+                    <option value="Villahermosa, Mexico">
+                    <option value="Washington County, USA">
+                    <option value="Washington D.C., USA">
+                    <option value="Winnipeg, Canada">
+                    <option value="Winter Quarters, USA">
+                    <option value="Yigo, Guam">
+                    <option value="Yuba City, USA">
+                </datalist>
+            </div>
+            <div>Check-In Date <span class="rqrd">*</span></div>
+            <div><input type="date" id="checkInDate" name="checkInDate" value="" disabled></div>
+            <div>Check-Out Date <span class="rqrd">*</span></div>
+            <div><input type="date" id="checkOutDate" name="checkOutDate" value="" disabled></div>
+            <div>Adults</div>
+            <div>
+                <select id="adults" name="adults" disabled>
+                    <option value="1" selected>1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+                    <option value="7">7 Adults</option>
+                    <option value="8">8 Adults</option>
+                    <option value="9">9 Adults</option>
+                    <option value="10">10 Adults</option>
+                    <option value="11">11 Adults</option>
+                    <option value="12">12 Adults</option>
+                    <option value="13">13 Adults</option>
+                    <option value="14">14 Adults</option>
+                    <option value="15">15 Adults</option>
+                    <option value="16">16 Adults</option>
+                    <option value="17">17 Adults</option>
+                    <option value="18">18 Adults</option>
+                    <option value="19">19 Adults</option>
+                    <option value="20">20 Adults</option>
+                    <option value="21">21 Adults</option>
+                    <option value="22">22 Adults</option>
+                    <option value="23">23 Adults</option>
+                    <option value="24">24 Adults</option>
+                    <option value="25">25 Adults</option>
+                    <option value="26">26 Adults</option>
+                    <option value="27">27 Adults</option>
+                    <option value="28">28 Adults</option>
+                    <option value="29">29 Adults</option>
+                    <option value="30">30 Adults</option>
+                </select>
+            </div>
+            <div>Children</div>
+            <div>
+                <select id="children" name="children" disabled>
+                    <option value="0" selected>No Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
+                    <option value="5">5 Children</option>
+                    <option value="6">6 Children</option>
+                    <option value="7">7 Children</option>
+                    <option value="8">8 Children</option>
+                    <option value="9">9 Children</option>
+                    <option value="10">10 Children</option>
+                </select>
+            </div>
+            <div id="divChild1" class="childHide">
+                <div>Child 1 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years1" name="years1" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild2" class="childHide">
+                <div>Child 2 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years2" name="years2" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild3" class="childHide">
+                <div>Child 3 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years3" name="years3" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild4" class="childHide">
+                <div>Child 4 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years4" name="years4" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild5" class="childHide">
+                <div>Child 5 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years5" name="years5" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild6" class="childHide">
+                <div>Child 6 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years6" name="years6" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild7" class="childHide">
+                <div>Child 7 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years7" name="years7" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild8" class="childHide">
+                <div>Child 8 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years8" name="years8" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild9" class="childHide">
+                <div>Child 9 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years9" name="years9" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChild10" class="childHide">
+                <div>Child 10 <span class="rqrd">*</span></div>
+                <div>
+                    <select id="years10" name="years10" disabled>
+                        <option value="" selected>Age at check-out</option>
+                        <option value="0">0 years old</option>
+                        <option value="1">1 year old</option>
+                        <option value="2">2 years old</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                    </select>
+                </div>
+            </div>
+            <div id="divChildBS" class="childHide">
+                    <div>Babysitting service <span class="rqrd">*</span> <span class="detail">(Add any detail in comments)</span></div>
+                    <div>
+                        <select id="babysitting" name="babysitting" disabled>
+                            <option value="" selected>Do you need it?</option>
+                            <option value="0">Not required</option>
+                            <option value="1">Short-term (Play room)</option>
+                            <option value="2">Long-term (Babysitter)</option>
+                        </select>
+                    </div>
+            </div>
+            <div>Rooms</div>
+            <div>
+                <select id="Rooms" name="Rooms" disabled>
+                    <option value="1" selected>1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                    <option value="7">7 Rooms</option>
+                    <option value="8">8 Rooms</option>
+                    <option value="9">9 Rooms</option>
+                    <option value="10">10 Rooms</option>
+                    <option value="11">11 Rooms</option>
+                    <option value="12">12 Rooms</option>
+                    <option value="13">13 Rooms</option>
+                    <option value="14">14 Rooms</option>
+                    <option value="15">15 Rooms</option>
+                    <option value="16">16 Rooms</option>
+                    <option value="17">17 Rooms</option>
+                    <option value="18">18 Rooms</option>
+                    <option value="19">19 Rooms</option>
+                    <option value="20">20 Rooms</option>
+                    <option value="21">21 Rooms</option>
+                    <option value="22">22 Rooms</option>
+                    <option value="23">23 Rooms</option>
+                    <option value="24">24 Rooms</option>
+                    <option value="25">25 Rooms</option>
+                    <option value="26">26 Rooms</option>
+                    <option value="27">27 Rooms</option>
+                    <option value="28">28 Rooms</option>
+                    <option value="29">29 Rooms</option>
+                    <option value="30">30 Rooms</option>
+                </select>
+            </div>
+            <div>Comments or special needs</div>
+            <div><textarea id="comments" name="comments" rows="5" disabled></textarea></div>
+            <div class="butspac">&nbsp;</div>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="terms" name="terms" disabled></td>
+                    <td>By checking this option I am accepting that my reservation is subject to the Temple selected and Temple Inn & Suites availability. My reservation will be answered within 24 hours. We may call you to get more information if necessary.</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <div class="butspac">&nbsp;</div>
+            <div class="but"><a href="reservations.html">Close</a></div>
+        </div>
+        <div id="callR">
+                <table>
+                        <tr>
+                            <td colspan="3"><h2>Temple Inn & Suites Call Center</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="eqt">
+                                <img src="images/booking.png"
+                                srcset="images/booking_small.png 50w,
+                                        images/booking_medium.png 100w,
+                                        images/booking_large.png 150w"
+                                sizes="100vw" alt="logo">
+                            </td>
+                            <td rowspan="2">OR</td>
+                            <td class="eqt">
+                                <img src="images/question.png"
+                                srcset="images/question_small.png 50w,
+                                        images/question_medium.png 100w,
+                                        images/question_large.png 150w"
+                                sizes="100vw" alt="logo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Call to<br> reserve</td>
+                            <td>Request<br>information</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="phone1">(571) 232-1685</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <br>
+                                Customer Service<br>
+                                <b>24 / 7</b><br><br>
+                                Headquarters<br>
+                                <b>Mon-Fri, 8:00 am - 5:00 pm</b>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div><h4>Address:</h4><b><br><i>Temple Inn & Suites</i> headquarters</b><br>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>&nbsp;</div>
+    <div><h4>Phone:</h4> (571) 232-1685<br><br><h4>Email: </h4>barbozalg@outlook.com</div>
+    <div class="copy">&copy;Luis Barboza &bull; <span id="dateY"></span></div>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script>
+
+data();
+childToggle(gObj("children").value);
+alert("Thanks for submitting your reservation.");
+
+</script>
+
+</body>
+</html>

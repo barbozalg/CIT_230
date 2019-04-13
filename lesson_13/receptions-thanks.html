@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. We caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.">
+<meta name="author" content="Luis Barboza">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="msapplication-TileColor" content="#284259">
+<meta name="theme-color" content="#ffffff">
+
+<title>Temple Inn & Suites | Wedding reception accommodations</title>
+
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/small.css" rel="stylesheet" type="text/css">
+<link href="css/medium.css" rel="stylesheet" type="text/css">
+<link href="css/large.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="images/logo.png"
+        srcset="images/logo_30x30.png 30w,
+                images/logo_60x60.png 60w,
+                images/logo_86x86.png 86w"
+        sizes="100vw" alt="logo">
+    </a>
+    <div>
+        <h1>Temple Inn &amp; Suites</h1>
+        <h2>On your way to the temple</h2>
+    </div>
+    <div id="dateS" class="dateHeader"></div>
+    <div id="dateL" class="dateHeader"></div>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu();"><b>&#9776;</b>&nbsp;&nbsp;Menu</button>
+    <ul id="iMenu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="search"><table><tr><td class="td">Search&nbsp;&nbsp;</td><td class="img"><img src="images/magnifier.png" alt="search"></td></tr></table></button>
+</nav>
+    
+<main>
+    <a href="receptions.html" class="enlace">Close</a><br>&nbsp;<br>
+    <h1>Information submitted</h1><br>
+    <div id="genForm">
+        <div class="flxCntr">
+        <div>Full Name <span class="rqrd">*</span></div>
+        <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" disabled></div>
+        <div>Email <span class="rqrd">*</span></div>
+        <div><input type="email" id="email" name="email" placeholder="user@email.org" disabled></div>
+        <div>Phone Number <span class="rqrd">*</span></div>
+        <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" disabled></div>
+        <div>Temple <span class="rqrd">*</span></div>
+        <div>
+            <input type="text" id="temple" name="temple" list="tList" style="background-color: #ebebe4;" disabled>
+            <datalist id="tList">
+                <option value="Aba, Nigeria">
+                <option value="Abidjan, Ivory Coast">
+                <option value="Accra, Ghana">
+                <option value="Adelaide, Australia">
+                <option value="Albuquerque, USA">
+                <option value="Anchorage, USA">
+                <option value="Antofagasta, Chile">
+                <option value="Apia, Samoa">
+                <option value="Arequipa, Peru">
+                <option value="Asuncion, Paraguay">
+                <option value="Atlanta, USA">
+                <option value="Auckland, New Zealand">
+                <option value="Bangkok, Thailand">
+                <option value="Barranquilla, Colombia">
+                <option value="Baton Rouge, USA">
+                <option value="Belem, Brazil">
+                <option value="Bengaluru, India">
+                <option value="Bern, Switzerland">
+                <option value="Billings Montana, USA">
+                <option value="Birmingham, USA">
+                <option value="Bismarck, USA">
+                <option value="Bogota, Colombia">
+                <option value="Boise, USA">
+                <option value="Boston, USA">
+                <option value="Bountiful, USA">
+                <option value="Brasilia, Brazil">
+                <option value="Brigham City, USA">
+                <option value="Brisbane, Australia">
+                <option value="Budapest, Hungary">
+                <option value="Buenos Aires, Argentina">
+                <option value="Cagayan de Oro, Philippines">
+                <option value="Calgary, Canada">
+                <option value="Campinas, Brazil">
+                <option value="Caracas, Venezuela">
+                <option value="Cardston, Canada">
+                <option value="Cebu City, Philippines">
+                <option value="Cedar City, USA">
+                <option value="Chicago, USA">
+                <option value="Ciudad Juarez, Mexico">
+                <option value="Cochabamba, Bolivia">
+                <option value="Colonia Juarez, Mexico">
+                <option value="Columbia River, USA">
+                <option value="Columbia, USA">
+                <option value="Columbus, USA">
+                <option value="Concepcion, Chile">
+                <option value="Copenhagen, Denmark">
+                <option value="Cordoba, Argentina">
+                <option value="Curitiba, Brazil">
+                <option value="Dallas, USA">
+                <option value="Davao, Philippines">
+                <option value="Denver, USA">
+                <option value="Detroit, USA">
+                <option value="Draper, USA">
+                <option value="Durban, South Africa">
+                <option value="Edmonton, Canada">
+                <option value="Fort Collins, USA">
+                <option value="Fort Lauderdale, USA">
+                <option value="Fortaleza, Brazil">
+                <option value="Frankfurt, Germany">
+                <option value="Freiberg, Germany">
+                <option value="Fresno, USA">
+                <option value="Fukuoka, Japan">
+                <option value="Gilbert, USA">
+                <option value="Greater Manila, Philippines">
+                <option value="Guadalajara, Mexico">
+                <option value="Guatemala City, Guatemala">
+                <option value="Guayaquil, Ecuador">
+                <option value="Halifax, Canada">
+                <option value="Hamilton, New Zealand">
+                <option value="Harare, Zimbabwe">
+                <option value="Hartford, USA">
+                <option value="Helsinki, Finland">
+                <option value="Hermosillo, Mexico">
+                <option value="Hong Kong, China">
+                <option value="Houston, USA">
+                <option value="Idaho Falls, USA">
+                <option value="Indianapolis, USA">
+                <option value="Johannesburg, South Africa">
+                <option value="Jordan River, USA">
+                <option value="Kansas City, USA">
+                <option value="Kinshasa Democratic, Republic of the Congo">
+                <option value="Kona, USA">
+                <option value="Kyiv, Ukraine">
+                <option value="Lagos, Nigeria">
+                <option value="Laie, USA">
+                <option value="Las Vegas, USA">
+                <option value="Layton, USA">
+                <option value="Lima, Peru">
+                <option value="Lima - Los Olivos, Peru">
+                <option value="Lisbon, Portugal">
+                <option value="Logan, USA">
+                <option value="London, England">
+                <option value="Los Angeles, USA">
+                <option value="Louisville, USA">
+                <option value="Lubbock, USA">
+                <option value="Madrid, Spain">
+                <option value="Managua, Nicaragua">
+                <option value="Manaus, Brazil">
+                <option value="Manhattan New York, USA">
+                <option value="Manila, Philippines">
+                <option value="Manti, USA">
+                <option value="Medford, USA">
+                <option value="Melbourne, Australia">
+                <option value="Memphis, USA">
+                <option value="Mendoza, Argentina">
+                <option value="Merida, Mexico">
+                <option value="Meridian, USA">
+                <option value="Mesa, USA">
+                <option value="Mexico City, Mexico">
+                <option value="Monterrey, Mexico">
+                <option value="Montevideo, Uruguay">
+                <option value="Monticello, USA">
+                <option value="Montreal, Canada">
+                <option value="Moses Lake, USA">
+                <option value="Mount Timpanogos, USA">
+                <option value="Nairobi, Kenya">
+                <option value="Nashville, USA">
+                <option value="Nauvoo, USA">
+                <option value="Neiafu, Tonga">
+                <option value="Newport Beach, USA">
+                <option value="Nuku'alofa, Tonga">
+                <option value="Oakland, USA">
+                <option value="Oaxaca, Mexico">
+                <option value="Ogden, USA">
+                <option value="Okinawa City, Okinawa">
+                <option value="Oklahoma City, USA">
+                <option value="Oquirrh Mountain, USA">
+                <option value="Orlando, USA">
+                <option value="Pago Pago, American Samoa">
+                <option value="Palmyra, USA">
+                <option value="Panama City, Panama">
+                <option value="Papeete, Tahiti">
+                <option value="Paris, France">
+                <option value="Payson, USA">
+                <option value="Perth, Australia">
+                <option value="Philadelphia, USA">
+                <option value="Phnom Penh, Cambodia">
+                <option value="Phoenix, USA">
+                <option value="Pocatello, USA">
+                <option value="Port-Au-Prince, Haiti">
+                <option value="Portland, USA">
+                <option value="Porto Alegre, Brazil">
+                <option value="Praia, Cape Verde">
+                <option value="Preston, England">
+                <option value="Provo City Center, USA">
+                <option value="Provo, USA">
+                <option value="Puebla, Mexico">
+                <option value="Quetzaltenango, Guatemala">
+                <option value="Quito, Ecuador">
+                <option value="Raleigh, USA">
+                <option value="Recife, Brazil">
+                <option value="Redlands, USA">
+                <option value="Regina, Canada">
+                <option value="Reno, USA">
+                <option value="Rexburg, USA">
+                <option value="Richmond, USA">
+                <option value="Rio de Janeiro, Brazil">
+                <option value="Rome, Italy">
+                <option value="Russia, Russia">
+                <option value="Sacramento, USA">
+                <option value="Salt Lake, USA">
+                <option value="Salta, Argentina">
+                <option value="Salvador, Brazil">
+                <option value="San Antonio, USA">
+                <option value="San Diego, USA">
+                <option value="San Jose, Costa Rica">
+                <option value="San Juan, Puerto Rico">
+                <option value="San Pedro Sula, Honduras">
+                <option value="San Salvador, El Salvador">
+                <option value="Santiago, Chile">
+                <option value="Santo Domingo, Dominican Republic">
+                <option value="Sao Paulo, Brazil">
+                <option value="Sapporo, Japan">
+                <option value="Saratoga Springs, USA">
+                <option value="Seattle, USA">
+                <option value="Seoul, Korea">
+                <option value="Snowflake, USA">
+                <option value="Spokane, USA">
+                <option value="Saint George, USA">
+                <option value="Saint Louis, USA">
+                <option value="Saint Paul, USA">
+                <option value="Star Valley, USA">
+                <option value="Stockholm, Sweden">
+                <option value="Suva, Fiji">
+                <option value="Sydney, Australia">
+                <option value="Taipei, Taiwan">
+                <option value="Tampico, Mexico">
+                <option value="Tegucigalpa, Honduras">
+                <option value="The Gila Valley, USA">
+                <option value="The Hague, Netherlands">
+                <option value="Tijuana, Mexico">
+                <option value="Tokyo, Japan">
+                <option value="Tooele Valley, USA">
+                <option value="Toronto, Canada">
+                <option value="Trujillo, Peru">
+                <option value="Tucson, USA">
+                <option value="Tuxtla Gutierrez, Mexico">
+                <option value="Twin Falls, USA">
+                <option value="Urdaneta, Philippines">
+                <option value="Vancouver, Canada">
+                <option value="Veracruz, Mexico">
+                <option value="Vernal, USA">
+                <option value="Villahermosa, Mexico">
+                <option value="Washington County, USA">
+                <option value="Washington D.C., USA">
+                <option value="Winnipeg, Canada">
+                <option value="Winter Quarters, USA">
+                <option value="Yigo, Guam">
+                <option value="Yuba City, USA">
+            </datalist>
+        </div>
+        <div>Comments <span class="rqrd">*</span></div>
+        <div><textarea id="comments" name="comments" rows="5" disabled></textarea></div>
+        <div class="butspac">&nbsp;</div>
+        <div class="but"><a href="temple-misionaries.html">Close</a></div>
+        </div>
+        <div id="callR">
+                <table>
+                        <tr>
+                            <td colspan="3"><h2>Temple Inn & Suites Call Center</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="eqt">
+                                <img src="images/booking.png"
+                                srcset="images/booking_small.png 50w,
+                                        images/booking_medium.png 100w,
+                                        images/booking_large.png 150w"
+                                sizes="100vw" alt="logo">
+                            </td>
+                            <td rowspan="2">OR</td>
+                            <td class="eqt">
+                                <img src="images/question.png"
+                                srcset="images/question_small.png 50w,
+                                        images/question_medium.png 100w,
+                                        images/question_large.png 150w"
+                                sizes="100vw" alt="logo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Call to<br> reserve</td>
+                            <td>Request<br>information</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="phone1">(571) 232-1685</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <br>
+                                Customer Service<br>
+                                <b>24 / 7</b><br><br>
+                                Headquarters<br>
+                                <b>Mon-Fri, 8:00 am - 5:00 pm</b>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div><h4>Address:</h4><b><br><i>Temple Inn & Suites</i> headquarters</b><br>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>&nbsp;</div>
+    <div><h4>Phone:</h4> (571) 232-1685<br><br><h4>Email:</h4> barbozalg@outlook.com</div>
+    <div class="copy">&copy;Luis Barboza &bull; <span id="dateY"></span></div>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script>
+
+data();
+alert("Thanks for submitting your information.");
+                
+</script>
+
+</body>
+</html>

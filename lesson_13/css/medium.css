@@ -1,0 +1,88 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 560px) {
+
+
+/*----------- BODY --------------*/
+body { font-size: 16px; font-family: Verdana, sans-serif; }
+
+
+/*----------- HEADER --------------*/
+header { grid-template-columns: 60px auto auto;}
+header img { width: 60px; }
+header div h1 { font-size: 18px; margin: 20px 0 0 0; }
+header div h2 { font-size: 14px; }
+#dateS{ display: none; }
+#dateL{ display: inline-block; }
+header div.dateHeader { font-size: 14px; padding: 23px 10px 0 0; }
+
+
+/*----------- NAVIGATION --------------*/
+nav button { display: none; font-size: 14px; }
+.search { display: inline; width: 90px; margin-right: 10px; }
+nav ul { display: block; }
+nav ul.hide { display: block; }
+nav ul li { float: left; }
+nav ul li a { padding: 8px 12px; font-size: 14px; }
+.clearfix:after { display: table; }
+
+
+/*----------- MAIN --------------*/
+
+/* Home */
+#msg {
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    width: 30%;
+    font-size: 11px;
+    background-color: rgba(1, 23, 48, 0.65);
+    line-height: 13px;
+}
+main h1 { font-size: 16px; }
+main h2 { font-size: 14px; }
+main p { font-size: 12px; }
+main div.services div { flex-basis: 46%; display: inline-block; }
+
+/* Temples */
+#tName { display: none; }
+#tName1 { display: block; }
+main .tLinkBack { font-size: 12px; }
+#dCont { padding: 0px 15px 15px 15px; }
+#dText { width: 48%; margin-top: 15px; margin-right: 15px; }
+#dImg { width: 48%; float: right; clear: right; margin:0px; }
+#hr { display: none; }
+#callA { display: block; width: 100%; margin-top: 10px; }
+#callT { display: none; }
+#tLinkGal, #tLinkEml, #tLinkCal, #tPhone { font-size: 12px; }
+main .tClassTtl { font-size: 13px; padding-bottom: 3px; margin: 12px 0px; }
+.tClassPrg { font-size: 12px; margin: 10px 10px 20px 10px; }
+
+/* Reservations */
+form { flex-basis: 60% }
+.flxCntr { flex-basis: 60% }
+#callR { flex-basis: 40% }
+
+/* Services */
+.ani { margin: 0 15px 15px 15px; }
+.pSp { margin: 0 5px 10px 5px; }
+#p4 { display: block; }
+#p5 { display: none} 
+
+/* Contact */
+#linea1 { display: inline; }
+#mapAPI iframe { width: 50%; height: 250px; }
+#call { grid-template-columns: auto 105px 65px 105px auto; }
+.booking img { width: 80px; }
+.callTxt { font-size: 13px; }
+.orTxt { font-size: 21px; }
+#tlA, #tlB { text-align: left; }
+.titulo { text-align: left; padding-left: 0px; }
+.flxCntr div input, .flxCntr div select, .flxCntr div textarea { font-size: 14px; }
+
+
+/*----------- FOOTER --------------*/
+footer div { width: 49%; display: inline-block; vertical-align: middle; }
+footer .copy { width: 100%; }
+
+
+} /* end of media query */

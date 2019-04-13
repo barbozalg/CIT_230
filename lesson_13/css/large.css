@@ -1,0 +1,75 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+#dateS{ display: none; }
+#dateL{ display: inline-block; }
+main div.services div { flex-basis: 30%; display: inline-block; }
+
+
+/*----------- NAVIGATION --------------*/
+nav button { display: none; }
+nav ul.hide { display: block; }
+.clearfix:after { display: table; }
+
+
+/*----------- MAIN --------------*/
+
+/* Home */
+#msg {
+    padding: 15px;
+    top: 15px;
+    right: 15px;
+    width: 25%;
+    font-size: 12px;
+    background-color: rgba(1, 23, 48, 0.7);
+    line-height: 15px;
+}
+
+/* Temples */
+main .tLinkBack { font-size: 13px; }
+#dText { width: 58%; }
+#dImg { width: 38%; float: right; clear: right; }
+#hr { display: none; }
+
+/*////////////////////////////////////////////////////*/
+
+main .tLinkBack { font-size: 12px; }
+#tLinkGal, #tLinkEml, #tLinkCal, #tPhone { font-size: 12px; }
+main .tClassTtl { font-size: 15px; }
+.tClassPrg { font-size: 14px; }
+#current { font-size: 14px; }
+#city { font-size: 14px; font-weight: bold; }
+#cTable { width: 80%; font-size: 14px; }
+#cTable #td1 { text-align: center; }
+
+/* ///////////////////////////////////////////////////*/
+
+/* Services */
+.ani { margin: 0 20px 20px 20px; }
+.pSp { margin: 0 10px 10px 10px; }
+#p4, #p5 { display: block; }
+
+/* Contact */
+#mapAPI iframe { width: 50%; height: 300px; }
+form { flex-basis: 75% }
+.flxCntr { flex-basis: 75% }
+#callR { flex-basis: 25% }
+
+#callR img, #callT img, #callA img { width: 50px; }
+#callR table, #callT table, #callA table { width: 190px; margin-left: auto; margin-right: auto; }
+#callR table td, #callT table td, #callA table td { text-align: center; font-size: 12px; }
+#callR .phone1, #callT .phone1, #callA .phone1 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+}
+
+/*----------- FOOTER --------------*/
+
+    
+} /* end of media query */
