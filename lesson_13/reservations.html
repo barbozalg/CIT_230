@@ -73,22 +73,22 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
         <li>When you submit your request it is not approved automatically. You will be contacted within 24 hours.</li>
         <li>Check-in must be done after 2 pm.</li>
         <li>Check-Out must be done before 11 am.</li>
-        <li>Reception after your sealing, call us or send this <a href="temple-misionaries.html" class="op">form</a>.</li>
-        <li>Temple missionaries, call us or send this <a href="receptions.html" class="op">form</a>.</li>
+        <li>Reception after your sealing, call us or send this <a href="receptions.html" class="op">form</a>.</li>
+        <li>Temple missionaries, call us or send this <a href="temple-misionaries.html" class="op">form</a>.</li>
         <li>Any question call us or send this <a href="contact.html" class="op">form</a>.</li>
     </ul>
     <div id="genForm">
     <form action="reservations_thanks.html" method="get">
         <div class="flxCntr">
             <div class="label"><h2 class="titulo" style="margin-top: 0px; padding-top: 0px;">Personal information</h2></div>
-            <div>Full Name <span class="rqrd">*</span></div>
+            <div><label for="fName">Full Name</label> <span class="rqrd">*</span></div>
             <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" required></div>
-            <div>Email</div>
+            <div><label for="email">Email</label></div>
             <div><input type="email" id="email" name="email" placeholder="user@email.org"></div>
-            <div>Phone Number <span class="rqrd">*</span></div>
+            <div><label for="phone">Phone Number</label> <span class="rqrd">*</span></div>
             <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" required></div>
             <div class="label"><h2 class="titulo" style="margin-top: 0px; padding-top: 0px;">Reservation information</h2></div>
-            <div>Temple <span class="rqrd">*</span></div>
+            <div><label for="temple">Temple</label> <span class="rqrd">*</span></div>
             <div>
                 <input type="text" id="temple" name="temple" list="tList" required>
                 <datalist id="tList">
@@ -303,11 +303,11 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                     <option value="Yuba City, USA">
                 </datalist>
             </div>
-            <div>Check-In Date <span class="rqrd">*</span></div>
+            <div><label for="checkInDate">Check-In Date</label> <span class="rqrd">*</span></div>
             <div><input type="date" id="checkInDate" name="checkInDate" value="" required></div>
-            <div>Check-Out Date <span class="rqrd">*</span></div>
+            <div><label for="checkOutDate">Check-Out Date</label> <span class="rqrd">*</span></div>
             <div><input type="date" id="checkOutDate" name="checkOutDate" value="" required></div>
-            <div>Adults</div>
+            <div><label for="adults">Adults</label></div>
             <div>
                 <select id="adults" name="adults">
                     <option value="1" selected>1 Adult</option>
@@ -342,7 +342,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                     <option value="30">30 Adults</option>
                 </select>
             </div>
-            <div>Children</div>
+            <div><label for="children">Children</label></div>
             <div>
                 <select id="children" name="children" onchange="childToggle(this.value);">
                     <option value="0" selected>No Children</option>
@@ -559,7 +559,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                     </select>
                 </div>
             </div>
-            <div>Rooms</div>
+            <div><label for="Rooms">Rooms</label></div>
             <div>
                 <select id="Rooms" name="Rooms">
                     <option value="1" selected>1 Room</option>
@@ -594,7 +594,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                     <option value="30">30 Rooms</option>
                 </select>
             </div>
-            <div>Comments or special needs</div>
+            <div><label for="comments">Comments or special needs</label></div>
             <div><textarea id="comments" name="comments" rows="5"></textarea></div>
             <div class="butspac">&nbsp;</div>
             <table>

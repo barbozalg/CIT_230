@@ -74,13 +74,13 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
             <form action="contact_thanks.html" method="get">
                     <div class="flxCntr">
                         <div class="label"><h2 class="titulo" style="margin-top: 0px; padding-top: 0px;">Personal information</h2></div>
-                        <div>Full Name <span class="rqrd">*</span></div>
+                        <div><label for="fName">Full Name</label> <span class="rqrd">*</span></div>
                         <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" required></div>
-                        <div>Email</div>
+                        <div><label for="email">Email</label></div>
                         <div><input type="email" id="email" name="email" placeholder="user@email.org"></div>
-                        <div>Phone Number <span class="rqrd">*</span></div>
+                        <div><label for="phone">Phone Number</label> <span class="rqrd">*</span></div>
                         <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" required></div>
-                        <div>Services</div>
+                        <div><label for="services">Services</label></div>
                         <div>
                             <select id="services" name="services">
                                 <option value="" selected disabled>Select Service ...</option>
@@ -89,7 +89,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                                 <option value="reception">Reception</option>
                             </select>
                         </div>
-                        <div>Type</div>
+                        <div><label for="type">Type</label></div>
                         <div>
                             <select id="type" name="type">
                                 <option value="" selected disabled>Select type ...</option>
@@ -99,7 +99,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                                 <option value="feedback">Feedback</option>
                             </select>
                         </div>
-                        <div>Comments <span class="rqrd">*</span></div>
+                        <div><label for="comments">Comments</label> <span class="rqrd">*</span></div>
                         <div><textarea id="comments" name="comments" rows="5" required></textarea></div>
                         <div class="butspac">&nbsp;</div>
                         <div class="but"><input type="submit"></div>

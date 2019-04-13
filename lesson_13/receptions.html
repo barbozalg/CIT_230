@@ -120,13 +120,13 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
     <form action="receptions-thanks.html" method="get">
             <div class="flxCntr">
                 <div class="label"><h2 class="titulo" style="margin-top: 20px; padding-top: 0px;">Personal information</h2></div>
-                <div>Full Name <span class="rqrd">*</span></div>
+                <div><label for="fName">Full Name</label> <span class="rqrd">*</span></div>
                 <div><input type="text" id="fName" name="fName" pattern="[a-z A-Z]{5,}" required></div>
-                <div>Email <span class="rqrd">*</span></div>
+                <div><label for="email">Email</label> <span class="rqrd">*</span></div>
                 <div><input type="email" id="email" name="email" placeholder="user@email.org" required></div>
-                <div>Phone Number <span class="rqrd">*</span></div>
+                <div><label for="phone">Phone Number</label> <span class="rqrd">*</span></div>
                 <div><input type="tel" id="phone" name="phone" placeholder="(###) ###-####" required></div>
-                <div>Temple <span class="rqrd">*</span></div>
+                <div><label for="temple">Temple</label> <span class="rqrd">*</span></div>
                 <div>
                     <input type="text" id="temple" name="temple" list="tList" required>
                     <datalist id="tList">
@@ -341,7 +341,7 @@ main input:hover, main select:hover, main textarea:hover { border-color: #FFD700
                         <option value="Yuba City, USA">
                     </datalist>
                 </div>
-                <div>Comments <span class="rqrd">*</span></div>
+                <div><label for="comments">Comments</label> <span class="rqrd">*</span></div>
                 <div><textarea id="comments" name="comments" rows="5" required></textarea></div>
                 <div class="butspac">&nbsp;</div>
                 <div class="but"><input type="submit"></div>
