@@ -230,7 +230,7 @@ form { flex-basis: 100% }
 }
 .phone { grid-column: span 3; text-align: center; font-size: 28px; padding: 15px; }
 .schedule { grid-column: span 3; }
-.schedule p { text-align: center; margin-top: 0px; }`
+.schedule p { text-align: center; margin-top: 0px; }
 .flxCntr  {
     display: flex;
     flex-direction: column;
