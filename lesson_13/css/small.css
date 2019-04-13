@@ -260,6 +260,7 @@ form { flex-basis: 100% }
 .flxCntr div input[type="submit"] { margin-top: 10px; }
 #ratingvalue { text-align: right; font-size: 11px; }
 .rqrd { color: #f79e1c; }
+iframe { width: 100%; height: 100%; border:0; }
 
 
 /*----------- FOOTER --------------*/
